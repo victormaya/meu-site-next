@@ -16,3 +16,4 @@ const useAnimation = (
   }, [scrollOn, card]);
 };
 export default useAnimation;
+
