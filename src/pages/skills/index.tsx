@@ -72,16 +72,14 @@ function Skills() {
   return (
     <ContainerDefaultPage onScroll={() => setScrollOn(!scrollOn)}>
       <Head title="Skills" />
-      {skillsList.map((skill) => {
-        return (
-          <Cards
-            scrollOn={scrollOn}
-            imagem={skill.imagem.src}
-            titulo={skill.titulo}
-            key={skill.titulo}
-          />
-        );
-      })}
+      {skillsList.map((skill) => (
+        <Cards
+          scrollOn={scrollOn}
+          imagem={skill.imagem.src}
+          titulo={skill.titulo}
+          key={skill.titulo}
+        />
+      ))}
     </ContainerDefaultPage>
   );
 }

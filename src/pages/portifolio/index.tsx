@@ -20,7 +20,11 @@ function Skills() {
         titulo="América Burguer"
         // subtitulo='JUNHO - 2020 / DEZEMBRO - 2021'
         conteudo={
-          <a href="http://americaburguer.surge.sh/" target="_blank">
+          <a
+            href="http://americaburguer.surge.sh/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Clique Aqui
           </a>
         }
@@ -30,11 +34,15 @@ function Skills() {
         imagem={Stakato.src}
         titulo="Academia de Música Stakato"
         conteudo={
-          <a href="http://academiastakato.surge.sh/" target="_blank">
+          <a
+            href="http://academiastakato.surge.sh/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Clique Aqui
           </a>
         }
-      ></Cards>
+      />
       <Cards
         scrollOn={scrollOn}
         imagem={PHOENIX.src}
@@ -43,6 +51,7 @@ function Skills() {
           <a
             href="https://play.google.com/store/apps/details?id=com.phoenix.english.course"
             target="_blank"
+            rel="noreferrer"
           >
             Clique Aqui
           </a>

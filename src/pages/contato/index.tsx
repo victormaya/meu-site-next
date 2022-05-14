@@ -25,6 +25,7 @@ function Skills() {
           <a
             href="https://api.whatsapp.com/send?phone=5599982756405"
             target="_blank"
+            rel="noreferrer"
           >
             Clique Aqui
           </a>
@@ -42,7 +43,11 @@ function Skills() {
         titulo="GitHub"
         subtitulo="@victormaya"
         conteudo={
-          <a href="https://github.com/victormaya" target="_blank">
+          <a
+            href="https://github.com/victormaya"
+            target="_blank"
+            rel="noreferrer"
+          >
             Clique Aqui
           </a>
         }
@@ -53,7 +58,11 @@ function Skills() {
         titulo="LinkedIn"
         subtitulo="@victor-maya"
         conteudo={
-          <a href="https://www.linkedin.com/in/victor-maya/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/victor-maya/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Clique Aqui
           </a>
         }

@@ -1,7 +1,8 @@
+import React from 'react';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import useLoading from '../hooks/useLoading';
 import { ThemeProvider } from 'styled-components';
+import useLoading from '../hooks/useLoading';
 import { GlobalStyles } from '../styles/global-styles';
 import { theme } from '../styles/theme';
 import DefaultLayout from '../layouts/DefaultLayout';
@@ -18,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link
           href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Passion+One:wght@400;700;900&display=swap"
           rel="stylesheet"
-        ></link>
+        />
       </Head>
       <DefaultLayout>
         {loading ? <Loading /> : <Component {...pageProps} />}

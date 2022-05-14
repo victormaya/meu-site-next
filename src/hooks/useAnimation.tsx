@@ -13,8 +13,6 @@ const useAnimation = (
     } else {
       card.current.classList.remove('visible');
     }
-  }, [scrollOn]);
-
-  return [];
+  }, [card]);
 };
 export default useAnimation;

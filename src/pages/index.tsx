@@ -1,9 +1,8 @@
 import React from 'react';
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import Router from 'next/router';
 
-const Home: NextPage = () => {
+function Home() {
   React.useEffect(() => {
     Router.push('/skills');
   }, []);
@@ -17,6 +16,6 @@ const Home: NextPage = () => {
       </Head>
     </div>
   );
-};
+}
 
 export default Home;

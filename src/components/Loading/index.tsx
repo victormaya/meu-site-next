@@ -3,7 +3,7 @@ import React from 'react';
 import { ContainerLoading } from './styled';
 import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled';
 
-const Loading: React.FC = () => {
+function Loading() {
   return (
     <ContainerDefaultPage>
       <ContainerLoading>
@@ -11,6 +11,6 @@ const Loading: React.FC = () => {
       </ContainerLoading>
     </ContainerDefaultPage>
   );
-};
+}
 
 export default Loading;

@@ -58,9 +58,12 @@ function Skills() {
             <br />
             <br />- Leitor de livros que marca, inclusive, a última pagina lida;{' '}
             <br />
-            <br />- Sessão de posts para que os professores coloquem textos com
-            curiosidades para os alunos treinarem seu inglês; <br />
-            <br />- Sessão de vídeos para cada professor adicionar suas aulas;
+            <br />
+            - Sessão de posts para que os professores coloquem textos com
+            curiosidades para os alunos treinarem seu inglês;
+            <br />
+            <br />
+            - Sessão de vídeos para cada professor adicionar suas aulas;
             <br />
             <br />- Gestão de contratos: alunos que concluem o curso ganham um
             ano de uso do app, já alunos que desistem têm seu acesso cancelado.

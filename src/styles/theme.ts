@@ -4,7 +4,7 @@ export const theme = {
     linearGradient:
       'linear-gradient(90deg, rgba(187, 50, 53, 1) 0%, rgba(255, 187, 17, 1) 50%)',
     greyText: '#ddd',
-    orangeText: '#fb1'
+    orangeText: '#fb1',
   },
   font: {
     family: {
@@ -23,6 +23,5 @@ export const theme = {
     },
   },
 };
-
 
 // ${({ theme }) => theme.colors.orangeText};

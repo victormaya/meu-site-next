@@ -3,15 +3,19 @@ import React from 'react';
 import { ContainerCard } from './styled';
 import useAnimation from '../../hooks/useAnimation';
 
-interface ICards {
+function Cards({
+  imagem,
+  titulo,
+  subtitulo,
+  conteudo,
+  scrollOn,
+}: {
   imagem: string;
   titulo: string;
   subtitulo?: string;
   conteudo?: string | React.ReactNode;
   scrollOn: boolean;
-}
-
-function Cards({ imagem, titulo, subtitulo, conteudo, scrollOn }: ICards) {
+}) {
   const card = React.useRef<HTMLHeadingElement>({} as HTMLHeadingElement);
   useAnimation(card, scrollOn);
 

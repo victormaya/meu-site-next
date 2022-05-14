@@ -6,11 +6,7 @@ import perfil from '../assets/perfil.jpeg';
 import MyAge from '../functions/MyAge';
 import YearsExperience from '../functions/YearsExperience';
 
-interface IDefaultLayout {
-  children: React.ReactNode;
-}
-
-const DefaultLayout = ({ children }: IDefaultLayout) => {
+function DefaultLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Container>
@@ -40,6 +36,6 @@ const DefaultLayout = ({ children }: IDefaultLayout) => {
       <Footer />
     </>
   );
-};
+}
 
 export default DefaultLayout;
