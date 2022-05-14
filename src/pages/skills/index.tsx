@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from 'next/head';
+import Head from '../../components/Head';
 import Cards from '../../components/Cards';
 import html5Img from '../../assets/html5.jpg';
 import css3Img from '../../assets/css3.jpg';
@@ -71,9 +71,7 @@ function Skills() {
 
   return (
     <ContainerDefaultPage onScroll={() => setScrollOn(!scrollOn)}>
-      <Head>
-        <title>Victor Maya | Skill</title>
-      </Head>
+      <Head title="Skills" />
       {skillsList.map((skill) => {
         return (
           <Cards

@@ -7,7 +7,7 @@ interface ICards {
   imagem: string;
   titulo: string;
   subtitulo?: string;
-  conteudo?: string;
+  conteudo?: string | React.ReactNode;
   scrollOn: boolean;
 }
 

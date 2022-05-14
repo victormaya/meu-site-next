@@ -1,12 +1,15 @@
 import React from 'react';
 
 import { ContainerLoading } from './styled';
+import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled';
 
 const Loading: React.FC = () => {
   return (
-    <ContainerLoading>
-      <div className='circle'/>
-    </ContainerLoading>
+    <ContainerDefaultPage>
+      <ContainerLoading>
+        <div className="circle" />
+      </ContainerLoading>
+    </ContainerDefaultPage>
   );
 };
 
