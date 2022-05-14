@@ -1,37 +1,28 @@
 export const theme = {
-    colors: {
-      primaryColor: '#0A1128',
-      secondaryColor: '#dc143c',
-      white: '#FFFFFF',
-      mediumGray: '#DDDDDD',
+  colors: {
+    background: '#151515',
+    linearGradient:
+      'linear-gradient(90deg, rgba(187, 50, 53, 1) 0%, rgba(255, 187, 17, 1) 50%)',
+    greyText: '#ddd',
+    orangeText: '#fb1'
+  },
+  font: {
+    family: {
+      default: 'Arial, sans-serif',
+      custom: "'Passion One', cursive",
     },
-    font: {
-      family: {
-        default: "'Open Sans', sans-serif",
-        secondary: "'Montserrat', sans-serif",
-      },
-      sizes: {
-        xsmall: '8rem',
-        small: '1.6rem',
-        medium: '2.4rem',
-        large: '3.2rem',
-        xlarge: '4.0rem',
-        xxlarge: '4.8rem',
-        huge: '5.6rem',
-        xhuge: '6.4rem',
-      },
+    sizes: {
+      xsmall: '0.875rem',
+      small: '1.125rem',
+      medium: '1.375rem',
+      large: '3rem',
+      // xlarge: '4.0rem',
+      // xxlarge: '4.8rem',
+      // huge: '5.6rem',
+      // xhuge: '6.4rem',
     },
-    media: {
-      lteMedium: '(max-width: 768px)',
-    },
-    spacings: {
-      xsmall: '8rem',
-      small: '1.6rem',
-      medium: '2.4rem',
-      large: '3.2rem',
-      xlarge: '4.0rem',
-      xxlarge: '4.8rem',
-      huge: '5.6rem',
-      xhuge: '6.4rem',
-    },
-  };
+  },
+};
+
+
+// ${({ theme }) => theme.colors.orangeText};
