@@ -7,12 +7,16 @@ import { GlobalStyles } from '../styles/global-styles';
 import { theme } from '../styles/theme';
 import DefaultLayout from '../layouts/DefaultLayout';
 import Loading from '../components/Loading';
+import SEO from '../../next-seo.config';
+import { DefaultSeo } from 'next-seo';
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { loading } = useLoading();
 
   return (
     <ThemeProvider theme={theme}>
+      <DefaultSeo {...SEO} />
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
