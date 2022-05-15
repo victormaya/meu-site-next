@@ -46,6 +46,7 @@ function Skills() {
         scrollOn={scrollOn}
         imagem={PHOENIX.src}
         titulo="Phoenix App"
+        alt="Phoenix App"
         subtitulo="OUTUBRO - 2020 / OUTUBRO - 2021"
         conteudo={
           <>
@@ -78,6 +79,7 @@ function Skills() {
         scrollOn={scrollOn}
         imagem={UNASUS.src}
         titulo="UNA-SUS UFMA"
+        alt="UNA-SUS UFMA"
         subtitulo="JUNHO - 2020 / DEZEMBRO - 2021"
         conteudo={
           <>

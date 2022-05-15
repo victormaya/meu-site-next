@@ -10,7 +10,6 @@ import Loading from '../components/Loading';
 import SEO from '../../next-seo.config';
 import { DefaultSeo } from 'next-seo';
 
-
 function MyApp({ Component, pageProps }: AppProps) {
   const { loading } = useLoading();
 
