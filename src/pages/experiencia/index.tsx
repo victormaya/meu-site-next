@@ -19,6 +19,7 @@ function Skills() {
         scrollOn={scrollOn}
         imagem={Samba.src}
         titulo="Samba Digital"
+        alt="Samba Digital"
         subtitulo="DEZEMBRO - 2021 / Atual"
         conteudo={<>Atualmente atuo como front-end pleno na Samba Digital.</>}
       />
@@ -26,6 +27,7 @@ function Skills() {
         scrollOn={scrollOn}
         imagem={USP.src}
         titulo="USPX - USP"
+        alt="USPX - USP"
         subtitulo="JUNHO - 2021 / Atual"
         conteudo={
           <>

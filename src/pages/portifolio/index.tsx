@@ -18,6 +18,7 @@ function Skills() {
         scrollOn={scrollOn}
         imagem={America.src}
         titulo="América Burguer"
+        alt="América Burguer"
         // subtitulo='JUNHO - 2020 / DEZEMBRO - 2021'
         conteudo={
           <a
@@ -33,6 +34,7 @@ function Skills() {
         scrollOn={scrollOn}
         imagem={Stakato.src}
         titulo="Academia de Música Stakato"
+        alt="Academia de Música Stakato"
         conteudo={
           <a
             href="http://academiastakato.surge.sh/"
@@ -47,6 +49,7 @@ function Skills() {
         scrollOn={scrollOn}
         imagem={PHOENIX.src}
         titulo="Phoenix App"
+        alt="Phoenix App"
         conteudo={
           <a
             href="https://play.google.com/store/apps/details?id=com.phoenix.english.course"

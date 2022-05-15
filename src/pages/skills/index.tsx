@@ -78,6 +78,7 @@ function Skills() {
           imagem={skill.imagem.src}
           titulo={skill.titulo}
           key={skill.titulo}
+          alt={skill.titulo}
         />
       ))}
     </ContainerDefaultPage>

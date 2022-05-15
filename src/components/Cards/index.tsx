@@ -9,12 +9,14 @@ function Cards({
   subtitulo,
   conteudo,
   scrollOn,
+  alt,
 }: {
   imagem: string;
   titulo: string;
   subtitulo?: string;
   conteudo?: string | React.ReactNode;
   scrollOn: boolean;
+  alt: string;
 }) {
   const card = React.useRef<HTMLHeadingElement>({} as HTMLHeadingElement);
   useAnimation(card, scrollOn);
@@ -22,7 +24,7 @@ function Cards({
   return (
     <ContainerCard ref={card}>
       <div className="image">
-        <img src={imagem} />
+        <img src={imagem} alt={alt} />
       </div>
       <div>
         <h2>{titulo}</h2>

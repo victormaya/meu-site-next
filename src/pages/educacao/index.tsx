@@ -16,6 +16,7 @@ function Skills() {
         scrollOn={scrollOn}
         imagem={UFMA.src}
         titulo="Bel. em Ciência e Tecnologia"
+        alt="Bel. em Ciência e Tecnologia"
         subtitulo="Universidade Federal do Maranhão"
         conteudo="2015 - 2020"
       />
@@ -23,6 +24,7 @@ function Skills() {
         scrollOn={scrollOn}
         imagem={UFMA.src}
         titulo="Engenharia da Computação"
+        alt="Engenharia da Computação"
         subtitulo="Universidade Federal do Maranhão"
         conteudo="2020 - ATUAL"
       />

@@ -20,6 +20,7 @@ function Skills() {
         scrollOn={scrollOn}
         imagem={wpp.src}
         titulo="Whatsapp"
+        alt="Whatsapp"
         subtitulo="(99) 9 8275-6405"
         conteudo={
           <a
@@ -35,12 +36,14 @@ function Skills() {
         scrollOn={scrollOn}
         imagem={gmail.src}
         titulo="E-mail"
+        alt="E-mail"
         subtitulo="victor.maya42@gmail.com"
       />
       <Cards
         scrollOn={scrollOn}
         imagem={github.src}
         titulo="GitHub"
+        alt="GitHub"
         subtitulo="@victormaya"
         conteudo={
           <a
@@ -56,6 +59,7 @@ function Skills() {
         scrollOn={scrollOn}
         imagem={linkedin.src}
         titulo="LinkedIn"
+        alt="LinkedIn"
         subtitulo="@victor-maya"
         conteudo={
           <a
