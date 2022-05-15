@@ -17,6 +17,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme}>
       <DefaultSeo {...SEO} />
       <Head>
+        <meta
+          property="og:image"
+          content="https://victormayadev.com/_next/static/media/perfil.36a1485c.jpeg"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
