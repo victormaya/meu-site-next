@@ -20,6 +20,13 @@ function HeadComponent({ title }: { title: string }) {
       description={descriptionToView}
       canonical={url}
       openGraph={{ url, title: titleToView }}
+      additionalMetaTags={[
+        {
+          name: 'keywords',
+          content:
+            'html, html5, css, css3, javascript, bootstrap, ui, ux, materialui, material, americaburger, america burguer, america, burguer, phoenix, phoenix app, victor.maya42@gmail.com,   figma, adobe, adobexd, wordpress, git, github dev, desenvolvedor, programador, programação, next, nextjs, reactjs, front-end, app, site, tecnologia, ufma, native, react native, implementação, acesso, maranhense, graduado, ciência, graduando, engenharia, computação, desenvolvedor, javascript, digital, portal, js, webinários, responsivo, desenvolvimento, react, pedreiras-ma, pedreiras, ma, maranhao, ui/ux, ui, ux, aplicativo, programação, implementado, dashboard, admin, desenvolvi, infográficos, dispositivo, smartphones, otimizou, implementando, html, html5, css, css3, javascript, bootstrap, ui, ux, materialui, material, americaburger, america burguer, america, burger, phoenix, phoenix app, victor.maya42@gmail.com, figma, adobe, adobexd, wordpress, git, github dev, developer, programmer, programming, next, nextjs, reactjs, front-end, app, website, technology, ufma, native, react native, implementation, access, maranhense, graduate, science, graduating, engineering, computing, developer, javascript, digital, portal, js, webinars, responsive, development, react, quarries-ma, quarries, ma, maranhao, ui/ux, ui, ux, application, programming, implemented, dashboard, admin, developed, infographics, device, smartphones, optimized, implementing',
+        },
+      ]}
     />
   );
 }
