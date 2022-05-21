@@ -5,6 +5,10 @@ export const theme = {
       'linear-gradient(90deg, rgba(187, 50, 53, 1) 0%, rgba(255, 187, 17, 1) 50%)',
     greyText: '#ddd',
     orangeText: '#fb1',
+    green: '#C5FE60',
+    pink: '#C21D92',
+    purple: '#2D2442',
+    darkPurple: '#0B0617',
   },
   font: {
     family: {

@@ -38,4 +38,15 @@ export const ContainerHeader = styled.header`
       }
     }
   }
+
+  .easterEggs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    cursor: pointer;
+    :hover {
+      opacity: 1;
+    }
+  }
 `;
