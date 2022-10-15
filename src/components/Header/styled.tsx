@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const ContainerHeader = styled.header`
   color: ${({ theme }) => theme.colors.orangeText};
@@ -38,4 +38,4 @@ export const ContainerHeader = styled.header`
       }
     }
   }
-`;
+`

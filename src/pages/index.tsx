@@ -1,11 +1,12 @@
-import React from 'react';
-import Head from 'next/head';
-import Router from 'next/router';
+import React from 'react'
+
+import Head from 'next/head'
+import Router from 'next/router'
 
 function Home() {
   React.useEffect(() => {
-    Router.push('/skills');
-  }, []);
+    Router.push('/skills')
+  }, [])
 
   return (
     <div>
@@ -15,7 +16,7 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

@@ -1,19 +1,18 @@
-import React from 'react';
+import React from 'react'
 
 const useAnimation = (
   card: React.MutableRefObject<HTMLHeadingElement>,
-  scrollOn: boolean,
+  scrollOn: boolean
 ) => {
   React.useEffect(() => {
     if (
       card.current.getBoundingClientRect().top <=
       (window.innerHeight * 3.1) / 4
     ) {
-      card.current.classList.add('visible');
+      card.current.classList.add('visible')
     } else {
-      card.current.classList.remove('visible');
+      card.current.classList.remove('visible')
     }
-  }, [scrollOn, card]);
-};
-export default useAnimation;
-
+  }, [scrollOn, card])
+}
+export default useAnimation

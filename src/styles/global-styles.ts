@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -152,4 +152,4 @@ a {
         rgba(187, 50, 53, 1) 50%
       ); */
 }
-`;
+`

@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 
-import { ContainerFooter } from './styled';
+import { ContainerFooter } from './styled'
 
 function Footer() {
-  const date = new Date();
+  const date = new Date()
   return (
     <ContainerFooter>
       <p>Victor Maya -{date.getFullYear()}</p>
       <div className="logo" />
     </ContainerFooter>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

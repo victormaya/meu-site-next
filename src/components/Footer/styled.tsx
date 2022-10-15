@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const ContainerFooter = styled.footer`
   background: ${({ theme }) => theme.colors.background};
@@ -25,4 +25,4 @@ export const ContainerFooter = styled.footer`
     opacity: 1;
     margin-left: 5px;
   }
-`;
+`

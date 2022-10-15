@@ -1,7 +1,8 @@
-import React from 'react';
-import Head from '../Head';
-import { ContainerLoading } from './styled';
-import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled';
+import React from 'react'
+
+import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled'
+import Head from '../Head'
+import { ContainerLoading } from './styled'
 
 function Loading() {
   return (
@@ -11,7 +12,7 @@ function Loading() {
         <div className="circle" />
       </ContainerLoading>
     </ContainerDefaultPage>
-  );
+  )
 }
 
-export default Loading;
+export default Loading

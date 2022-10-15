@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
@@ -46,7 +46,7 @@ export const ContentLeft = styled.section`
       transition: all 0.3s ease;
     }
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       background: ${({ theme }) => theme.colors.linearGradient};
       width: 5rem;

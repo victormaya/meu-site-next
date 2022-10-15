@@ -1,13 +1,12 @@
-import React from 'react';
-import Cards from '../../components/Cards';
+import React from 'react'
 
-import UFMA from '../../assets/UFMA.jpg';
-
-import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled';
-import Head from '../../components/Head';
+import UFMA from '../../assets/UFMA.jpg'
+import Cards from '../../components/Cards'
+import Head from '../../components/Head'
+import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled'
 
 function Skills() {
-  const [scrollOn, setScrollOn] = React.useState(false);
+  const [scrollOn, setScrollOn] = React.useState(false)
 
   return (
     <ContainerDefaultPage onScroll={() => setScrollOn(!scrollOn)}>
@@ -29,7 +28,7 @@ function Skills() {
         conteudo="2020 - ATUAL"
       />
     </ContainerDefaultPage>
-  );
+  )
 }
 
-export default Skills;
+export default Skills

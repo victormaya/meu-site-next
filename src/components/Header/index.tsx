@@ -1,6 +1,8 @@
-import React from 'react';
-import Link from 'next/link';
-import { ContainerHeader } from './styled';
+import React from 'react'
+
+import Link from 'next/link'
+
+import { ContainerHeader } from './styled'
 
 function Header() {
   return (
@@ -13,7 +15,7 @@ function Header() {
         <Link href="/contato">Contato</Link>
       </nav>
     </ContainerHeader>
-  );
+  )
 }
 
-export default Header;
+export default Header

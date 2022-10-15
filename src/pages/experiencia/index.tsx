@@ -1,16 +1,15 @@
-import React from 'react';
-import Cards from '../../components/Cards';
+import React from 'react'
 
-import UNASUS from '../../assets/unasus.png';
-import PHOENIX from '../../assets/Phoenix.jpg';
-import USP from '../../assets/usp.png';
-import Samba from '../../assets/samba.jpeg';
-
-import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled';
-import Head from '../../components/Head';
+import PHOENIX from '../../assets/Phoenix.jpg'
+import Samba from '../../assets/samba.jpeg'
+import UNASUS from '../../assets/unasus.png'
+import USP from '../../assets/usp.png'
+import Cards from '../../components/Cards'
+import Head from '../../components/Head'
+import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled'
 
 function Skills() {
-  const [scrollOn, setScrollOn] = React.useState(false);
+  const [scrollOn, setScrollOn] = React.useState(false)
 
   return (
     <ContainerDefaultPage onScroll={() => setScrollOn(!scrollOn)}>
@@ -96,7 +95,7 @@ function Skills() {
         }
       />
     </ContainerDefaultPage>
-  );
+  )
 }
 
-export default Skills;
+export default Skills

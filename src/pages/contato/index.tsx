@@ -1,17 +1,15 @@
-import React from 'react';
-import Cards from '../../components/Cards';
+import React from 'react'
 
-import wpp from '../../assets/wpp.jpeg';
-import gmail from '../../assets/gmail.png';
-import linkedin from '../../assets/linkedin.png';
-import github from '../../assets/GitHub.jpg';
-
-import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled';
-import Head from '../../components/Head';
+import github from '../../assets/GitHub.jpg'
+import gmail from '../../assets/gmail.png'
+import linkedin from '../../assets/linkedin.png'
+import wpp from '../../assets/wpp.jpeg'
+import Cards from '../../components/Cards'
+import Head from '../../components/Head'
+import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled'
 
 function Skills() {
-  const [scrollOn, setScrollOn] = React.useState(false);
-  const containerSkills = React.useRef();
+  const [scrollOn, setScrollOn] = React.useState(false)
 
   return (
     <ContainerDefaultPage onScroll={() => setScrollOn(!scrollOn)}>
@@ -72,7 +70,7 @@ function Skills() {
         }
       />
     </ContainerDefaultPage>
-  );
+  )
 }
 
-export default Skills;
+export default Skills

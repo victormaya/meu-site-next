@@ -1,15 +1,14 @@
-import React from 'react';
-import Head from '../../components/Head';
-import Cards from '../../components/Cards';
+import React from 'react'
 
-import America from '../../assets/america.png';
-import Stakato from '../../assets/stakato.png';
-import PHOENIX from '../../assets/Phoenix.jpg';
-
-import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled';
+import America from '../../assets/america.png'
+import PHOENIX from '../../assets/Phoenix.jpg'
+import Stakato from '../../assets/stakato.png'
+import Cards from '../../components/Cards'
+import Head from '../../components/Head'
+import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled'
 
 function Skills() {
-  const [scrollOn, setScrollOn] = React.useState(false);
+  const [scrollOn, setScrollOn] = React.useState(false)
 
   return (
     <ContainerDefaultPage onScroll={() => setScrollOn(!scrollOn)}>
@@ -61,7 +60,7 @@ function Skills() {
         }
       />
     </ContainerDefaultPage>
-  );
+  )
 }
 
-export default Skills;
+export default Skills

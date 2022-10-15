@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const ContainerCard = styled.div`
   /* para animacao */
@@ -82,4 +82,4 @@ export const ContainerCard = styled.div`
   &:last-child {
     margin-bottom: 10rem;
   }
-`;
+`
