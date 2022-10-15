@@ -1,66 +1,56 @@
 import React from 'react'
 
-import America from '../../assets/america.png'
-import PHOENIX from '../../assets/Phoenix.jpg'
-import Stakato from '../../assets/stakato.png'
 import Cards from '../../components/Cards'
 import Head from '../../components/Head'
+import Loading from '../../components/Loading'
 import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled'
 
-function Skills() {
+function Portifolio({
+  portData
+}: {
+  portData: {
+    image: string
+    link: string
+    sort: null
+    title: string
+  }[]
+}) {
   const [scrollOn, setScrollOn] = React.useState(false)
 
   return (
     <ContainerDefaultPage onScroll={() => setScrollOn(!scrollOn)}>
       <Head title="Portifólio" />
-      <Cards
-        scrollOn={scrollOn}
-        imagem={America.src}
-        titulo="América Burguer"
-        alt="América Burguer"
-        // subtitulo='JUNHO - 2020 / DEZEMBRO - 2021'
-        conteudo={
-          <a
-            href="http://americaburguer.surge.sh/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Clique Aqui
-          </a>
-        }
-      />
-      <Cards
-        scrollOn={scrollOn}
-        imagem={Stakato.src}
-        titulo="Academia de Música Stakato"
-        alt="Academia de Música Stakato"
-        conteudo={
-          <a
-            href="http://academiastakato.surge.sh/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Clique Aqui
-          </a>
-        }
-      />
-      <Cards
-        scrollOn={scrollOn}
-        imagem={PHOENIX.src}
-        titulo="Phoenix App"
-        alt="Phoenix App"
-        conteudo={
-          <a
-            href="https://play.google.com/store/apps/details?id=com.phoenix.english.course"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Clique Aqui
-          </a>
-        }
-      />
+      {portData.length > 0 ? (
+        portData.map((port) => (
+          <Cards
+            key={port.title}
+            scrollOn={scrollOn}
+            imagem={port.image}
+            titulo={port.title}
+            alt={port.title}
+            link={port.link}
+          />
+        ))
+      ) : (
+        <Loading />
+      )}
     </ContainerDefaultPage>
   )
 }
 
-export default Skills
+export async function getStaticProps() {
+  let portData = {}
+  await fetch('https://swnxabum.directus.app/items/portifolio').then(
+    async (response) => {
+      const json = await response.json()
+      portData = json.data
+    }
+  )
+  return {
+    props: {
+      portData
+    }
+  }
+}
+
+export default Portifolio

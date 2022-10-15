@@ -78,6 +78,7 @@ export const ContainerCard = styled.div`
   }
   p {
     color: ${({ theme }) => theme.colors.greyText};
+    line-height: 1.5rem;
   }
   &:last-child {
     margin-bottom: 10rem;

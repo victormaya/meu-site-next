@@ -9,14 +9,16 @@ function Cards({
   subtitulo,
   conteudo,
   scrollOn,
-  alt
+  alt,
+  link
 }: {
   imagem: string
   titulo: string
   subtitulo?: string
-  conteudo?: string | React.ReactNode
+  conteudo?: string
   scrollOn: boolean
   alt: string
+  link?: string
 }) {
   const card = React.useRef<HTMLHeadingElement>({} as HTMLHeadingElement)
   useAnimation(card, scrollOn)
@@ -29,7 +31,19 @@ function Cards({
       <div>
         <h2>{titulo}</h2>
         <h3>{subtitulo}</h3>
-        <p>{conteudo}</p>
+        {conteudo
+          ?.toString()
+          .split('<br />')
+          .map((cont) => (
+            <p key={cont}>{cont}</p>
+          ))}
+        {link && (
+          <p>
+            <a href={link} target="_blank" rel="noreferrer">
+              Clique Aqui
+            </a>
+          </p>
+        )}
       </div>
     </ContainerCard>
   )
