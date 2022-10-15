@@ -86,5 +86,8 @@ export const ContainerCard = styled.div`
   }
   &:last-child {
     margin-bottom: 10rem;
+    @media (max-width: 970px) {
+      margin-bottom: 0;
+    }
   }
 `

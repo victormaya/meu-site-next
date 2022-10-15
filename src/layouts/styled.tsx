@@ -4,10 +4,12 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  min-height: calc(100vh - 4rem);
+  height: calc(100vh - 4rem);
   background: ${({ theme }) => theme.colors.background};
   @media (max-width: 970px) {
     overflow: auto;
+    height: initial;
+    min-height: calc(100vh - 4rem);
     grid-template-columns: 1fr;
   }
   .animaLeft {

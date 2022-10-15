@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ContainerDefaultPage = styled.div`
   display: flex;
@@ -11,4 +11,7 @@ export const ContainerDefaultPage = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-`
+  @media (max-width: 970px) {
+    height: auto;
+  }
+`;
