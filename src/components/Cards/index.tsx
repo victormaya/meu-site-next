@@ -35,7 +35,10 @@ function Cards({
           ?.toString()
           .split('<br />')
           .map((cont) => (
-            <p key={cont}>{cont}</p>
+            <>
+              <p key={cont}>{cont}</p>
+              <br />
+            </>
           ))}
         {link && (
           <p>
