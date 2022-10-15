@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: grid;
@@ -25,7 +25,7 @@ export const Container = styled.div`
     opacity: 1;
     transform: initial;
   }
-`;
+`
 
 export const ContentLeft = styled.section`
   padding: 4rem 2rem;
@@ -46,7 +46,7 @@ export const ContentLeft = styled.section`
       transition: all 0.3s ease;
     }
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       background: ${({ theme }) => theme.colors.linearGradient};
       width: 5rem;
@@ -89,7 +89,7 @@ export const ContentLeft = styled.section`
       font-size: ${({ theme }) => theme.font.sizes.small};
     }
   }
-`;
+`
 
 export const ContentRight = styled.section`
   padding: 4rem 2rem;
@@ -100,4 +100,4 @@ export const ContentRight = styled.section`
   flex-direction: column;
   align-items: center;
   font-family: ${({ theme }) => theme.font.family.default};
-`;
+`

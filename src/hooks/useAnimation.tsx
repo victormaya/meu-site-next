@@ -5,13 +5,15 @@ const useAnimation = (
   scrollOn: boolean
 ) => {
   React.useEffect(() => {
-    if (
-      card.current.getBoundingClientRect().top <=
-      (window.innerHeight * 3.1) / 4
-    ) {
-      card.current.classList.add('visible')
-    } else {
-      card.current.classList.remove('visible')
+    if (window.innerWidth > 970) {
+      if (
+        card.current.getBoundingClientRect().top <=
+        (window.innerHeight * 3.1) / 4
+      ) {
+        card.current.classList.add('visible')
+      } else {
+        card.current.classList.remove('visible')
+      }
     }
   }, [scrollOn, card])
 }

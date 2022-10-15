@@ -4,8 +4,12 @@ export const ContainerCard = styled.div`
   /* para animacao */
   opacity: 0;
   transform: translateX(20px);
-
   /* para animacao */
+  @media (max-width: 970px) {
+    /* nao ter animação no mobile de sumir e apaercer */
+    opacity: 1;
+    transform: initial;
+  }
 
   background: #eeeeee1a;
   width: 80%;
