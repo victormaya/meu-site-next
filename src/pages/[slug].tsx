@@ -12,6 +12,7 @@ interface IData {
   content: string
   link: string
   type: string
+  file: string
 }
 
 function Skills({ data }: { data: IData[] }) {
@@ -31,6 +32,7 @@ function Skills({ data }: { data: IData[] }) {
             subtitulo={item.subtitle}
             conteudo={item.content}
             link={item.link}
+            file={item.file}
           />
         ))
       ) : (

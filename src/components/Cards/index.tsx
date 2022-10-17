@@ -10,7 +10,8 @@ function Cards({
   conteudo,
   scrollOn,
   alt,
-  link
+  link,
+  file
 }: {
   imagem: string
   titulo: string
@@ -19,6 +20,7 @@ function Cards({
   scrollOn: boolean
   alt: string
   link?: string
+  file?: string
 }) {
   const card = React.useRef<HTMLHeadingElement>({} as HTMLHeadingElement)
   useAnimation(card, scrollOn)
@@ -40,9 +42,14 @@ function Cards({
               <br />
             </>
           ))}
-        {link && (
+        {(link || file) && (
           <p>
-            <a href={link} target="_blank" rel="noreferrer">
+            <a
+              href={link || `https://swnxabum.directus.app/assets/${file}.pdf`}
+              target="_blank"
+              rel="noreferrer"
+              download={file}
+            >
               Clique Aqui
             </a>
           </p>
