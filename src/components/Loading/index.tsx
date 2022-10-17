@@ -7,7 +7,7 @@ import { ContainerLoading } from './styled'
 function Loading() {
   return (
     <ContainerDefaultPage>
-      <Head title="..." />
+      {/* <Head title="..." /> */}
       <ContainerLoading>
         <div className="loader" />
       </ContainerLoading>
