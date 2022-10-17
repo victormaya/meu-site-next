@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const ContainerDefaultPage = styled.div`
   display: flex;
   flex-direction: column;
   overflow: auto;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -14,4 +14,4 @@ export const ContainerDefaultPage = styled.div`
   @media (max-width: 970px) {
     height: auto;
   }
-`;
+`
