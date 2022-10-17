@@ -15,17 +15,17 @@ export default {
     site_name: title,
     title,
     description,
-    profile: { firstName: 'Victor Maya', lastName: 'Nascimento Almeida' }
+    profile: { firstName: 'Victor Maya', lastName: 'Nascimento Almeida' },
+    images: [
+      {
+        url: 'https://swnxabum.directus.app/assets/14b2d43d-f834-4eec-93db-e4c395c36ee2',
+        alt: title,
+        width: 424,
+        height: 424,
+        type: 'image/jpeg'
+      }
+    ]
   },
-  images: [
-    {
-      url: 'https://swnxabum.directus.app/assets/14b2d43d-f834-4eec-93db-e4c395c36ee2',
-      alt: title,
-      width: 424,
-      height: 424,
-      type: 'image/jpeg'
-    }
-  ],
   twitter: {
     handle: '@handle',
     site: '@site',
