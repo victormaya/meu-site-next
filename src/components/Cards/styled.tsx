@@ -11,7 +11,7 @@ export const ContainerCard = styled.div`
     transform: initial;
   }
 
-  background: #eeeeee1a;
+  background: ${({ theme }) => theme.colors.greyBg};
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 4fr;

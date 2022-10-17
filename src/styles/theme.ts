@@ -3,8 +3,9 @@ export const theme = {
     background: '#151515',
     linearGradient:
       'linear-gradient(90deg, rgba(187, 50, 53, 1) 0%, rgba(255, 187, 17, 1) 50%)',
-    greyText: '#fff',
-    orangeText: '#fb1'
+    greyText: '#ddd',
+    orangeText: '#fb1',
+    greyBg: '#eeeeee1a'
   },
   font: {
     family: {
