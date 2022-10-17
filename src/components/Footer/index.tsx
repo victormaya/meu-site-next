@@ -6,7 +6,7 @@ function Footer() {
   const date = new Date()
   return (
     <ContainerFooter>
-      <p>Victor Maya -{date.getFullYear()}</p>
+      <p>Victor Maya - {date.getFullYear()}</p>
       <div className="logo" />
     </ContainerFooter>
   )
