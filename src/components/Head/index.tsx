@@ -26,7 +26,24 @@ function HeadComponent({ title }: { title: string }) {
       title={titleToView}
       description={descriptionToView}
       canonical={url}
-      openGraph={{ url, title: titleToView }}
+      openGraph={{
+        type: 'website',
+        locale: 'pt_BR',
+        url: 'https://victormayadev.com',
+        site_name: title,
+        title: titleToView,
+        description: descriptionToView,
+        profile: { firstName: 'Victor Maya', lastName: 'Nascimento Almeida' },
+        images: [
+          {
+            url: 'https://swnxabum.directus.app/assets/14b2d43d-f834-4eec-93db-e4c395c36ee2',
+            alt: titleToView,
+            width: 424,
+            height: 424,
+            type: 'image/jpeg'
+          }
+        ]
+      }}
       additionalMetaTags={[
         {
           name: 'keywords',
