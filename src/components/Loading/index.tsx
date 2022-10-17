@@ -9,7 +9,7 @@ function Loading() {
     <ContainerDefaultPage>
       <Head title="..." />
       <ContainerLoading>
-        <div className="circle" />
+        <div className="loader" />
       </ContainerLoading>
     </ContainerDefaultPage>
   )
