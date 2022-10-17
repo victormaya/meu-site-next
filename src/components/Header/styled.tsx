@@ -11,15 +11,19 @@ export const ContainerHeader = styled.header`
     margin-bottom: 2rem;
   }
   a {
-    color: #ddd;
+    color: ${({ theme }) => theme.colors.greyText};
     font-size: ${({ theme }) => theme.font.sizes.medium};
     position: relative;
     font-weight: bold;
     z-index: 1;
+    :hover {
+      color: ${({ theme }) => theme.colors.orangeText};
+    }
   }
   .active {
+    color: ${({ theme }) => theme.colors.orangeText};
     z-index: 1;
-    &:before {
+    /* &:before {
       content: '';
       width: 1rem;
       height: 1rem;
@@ -28,14 +32,20 @@ export const ContainerHeader = styled.header`
       border-radius: 50%;
       bottom: -5px;
       left: -5px;
-      animation: surgeMark 1s forwards;
+      animation: surgeMark 0.5s forwards, roundMark 0.5s 0.25s forwards;
       z-index: -1;
       opacity: 0.7;
+      transform: scale(0);
     }
     @keyframes surgeMark {
       to {
-        border-radius: 3px;
+        transform: initial;
       }
     }
+    @keyframes roundMark {
+      to {
+        border-radius: 3px;
+      }
+    } */
   }
 `

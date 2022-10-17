@@ -80,10 +80,10 @@ export const ContentLeft = styled.section`
       font-size: ${({ theme }) => theme.font.sizes.large};
       line-height: 2;
       font-family: ${({ theme }) => theme.font.family.custom};
-      background-image: ${({ theme }) => theme.colors.linearGradient};
+      /* background-image: ${({ theme }) => theme.colors.linearGradient};
       background-clip: text;
-      -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
-      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; */
     }
     p {
       color: ${({ theme }) => theme.colors.greyText};

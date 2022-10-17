@@ -3,12 +3,12 @@ export const theme = {
     background: '#151515',
     linearGradient:
       'linear-gradient(90deg, rgba(187, 50, 53, 1) 0%, rgba(255, 187, 17, 1) 50%)',
-    greyText: '#ddd',
+    greyText: '#fff',
     orangeText: '#fb1'
   },
   font: {
     family: {
-      default: 'Arial, sans-serif',
+      default: "'Poppins', sans-serif",
       custom: "'Passion One', cursive"
     },
     sizes: {

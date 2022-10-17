@@ -67,14 +67,15 @@ export const ContainerCard = styled.div`
     font-size: ${({ theme }) => theme.font.sizes.medium};
     font-weight: bold;
     line-height: 1.1;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       90deg,
       rgba(187, 50, 53, 1) 0%,
       rgba(255, 187, 17, 1) 10%
-    );
-    background-clip: text;
-    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
-    -webkit-text-fill-color: transparent;
+    ); */
+    color: ${({ theme }) => theme.colors.orangeText};
+    /* background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
   }
   h3 {
     font-size: ${({ theme }) => theme.font.sizes.small};
