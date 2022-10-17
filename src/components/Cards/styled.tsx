@@ -52,7 +52,9 @@ export const ContainerCard = styled.div`
     }
   }
   &:hover {
-    transform: scale(1.05);
+    @media (min-width: 971px) {
+      transform: scale(1.05);
+    }
     img {
       border-radius: 6px;
     }
