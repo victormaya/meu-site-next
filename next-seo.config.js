@@ -1,6 +1,6 @@
 const title = 'Victor Maya, Desenvolvedor Front-end';
 const description =
-  'Maranhense, graduado em Ciência e Tecnologia(UFMA), graduando em Engenharia da Computação(UFMA). Sou desenvolvedor front-end com 2 anos de experiência. Trabalho com JavaScript, lidando diariamente com ReactJs e Native. Sou apaixonado por tecnologia, viagens e música. Vivo entre o analógico e o digital.';
+  'Tenho 25 anos, maranhense, graduado em Ciência e Tecnologia(UFMA). Sou desenvolvedor front-end com 2 anos de experiência. Trabalho com JavaScript, lidando diariamente com ReactJs e NextJS. Sou apaixonado por tecnologia, viagens e música. Vivo entre o analógico e o digital.';
 
 export default {
   title,
@@ -17,7 +17,7 @@ export default {
   },
   images: [
     {
-      url: 'https://victormayadev.com/_next/static/media/perfil.36a1485c.jpeg',
+      url: 'https://swnxabum.directus.app/assets/14b2d43d-f834-4eec-93db-e4c395c36ee2',
       alt: title,
       width: 424,
       height: 424,
