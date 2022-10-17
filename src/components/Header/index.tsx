@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -7,45 +7,42 @@ import { ContainerHeader } from './styled'
 
 function Header() {
   const { asPath } = useRouter()
+  const [tabs, setTabs] = useState(
+    [] as {
+      title: string
+      path: string
+    }[]
+  )
+
+  async function getTabs() {
+    await fetch('https://swnxabum.directus.app/items/abas')
+      .then(async (response) => {
+        const { data }: { data: { title: string; path: string }[] } =
+          await response.json()
+        setTabs(data)
+      })
+      .catch(() => {
+        // fazer o catch com Swal
+      })
+  }
+
+  useEffect(() => {
+    getTabs()
+  }, [])
 
   return (
     <ContainerHeader>
       <nav>
-        <Link href="/skills">
-          <a href="skills" className={asPath === '/skills' ? 'active' : ''}>
-            Skills
-          </a>
-        </Link>{' '}
-        |
-        <Link href="/experiencia">
-          <a
-            href="experiencia"
-            className={asPath === '/experiencia' ? 'active' : ''}
-          >
-            {' '}
-            Experiência
-          </a>
-        </Link>{' '}
-        |
-        <Link
-          href="/portifolio"
-          className={asPath === '/portifolio' ? 'active' : ''}
-        >
-          <a
-            href="portifolio"
-            className={asPath === '/portifolio' ? 'active' : ''}
-          >
-            {' '}
-            Portifólio
-          </a>
-        </Link>{' '}
-        |
-        <Link href="/contato" className={asPath === '/contato' ? 'active' : ''}>
-          <a href="contato" className={asPath === '/contato' ? 'active' : ''}>
-            {' '}
-            Contato
-          </a>
-        </Link>
+        {tabs.map((item) => (
+          <Link href={`/${item.path}`} key={item.title}>
+            <a
+              href={item.title}
+              className={asPath === `/${item.path}` ? 'active' : ''}
+            >
+              {item.title}
+            </a>
+          </Link>
+        ))}
       </nav>
     </ContainerHeader>
   )

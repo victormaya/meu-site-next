@@ -28,7 +28,7 @@ function HomeContextProvider({ children }: { children: ReactNode }) {
 
   async function getDataHome() {
     setLoading(true)
-    await fetch('https://swnxabum.directus.app/items/Home')
+    await fetch('https://swnxabum.directus.app/items/home')
       .then(async (response) => {
         const { data } = await response.json()
         setDataHome(data[0])

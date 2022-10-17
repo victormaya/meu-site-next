@@ -9,8 +9,6 @@ const P404 = styled.h1`
   font-size: ${({ theme }) => theme.font.sizes.medium};
 `
 
-// import { Container } from './styles';
-
 function Page404() {
   return (
     <>
