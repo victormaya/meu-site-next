@@ -24,7 +24,7 @@ function Skills({ data }: { data: IData[] }) {
       <Head title={data[0].type} />
       {data.length > 0 ? (
         data.map((item) =>
-          item.type !== 'music' ? (
+          item.type !== 'Music' ? (
             <Cards
               scrollOn={scrollOn}
               imagem={item.image}
