@@ -28,6 +28,7 @@ function CardMusic({
     percent: 0
   } as IStatusPlayer)
 
+
   function onPlayPause() {
     setIsPlay(!isPlaying)
     if (isPlaying) {
@@ -38,14 +39,16 @@ function CardMusic({
   }
 
   return (
-    <ContainerCard ref={card}>
+    <ContainerCard ref={card} percent={statusPlayer.percent}>
       <button onClick={onPlayPause}>{isPlaying ? <Pause /> : <Play />}</button>
       <div className="title-progress">
         <h2>{title}</h2>
         <audio
+          preload='metadata'
           ref={player}
           src={`https://swnxabum.directus.app/assets/${file}.mp3`}
-          onTimeUpdate={() =>
+          onTimeUpdate={() => {
+            console.log(player.current.currentTime);
             setStatusPlayer({
               total: player.current.duration,
               current: player.current.currentTime,
@@ -53,11 +56,31 @@ function CardMusic({
                 (player.current.currentTime / player.current.duration) * 100
             })
           }
+
+          }
+          onEnded={() => setIsPlay(false)}
         >
           <track src="" kind="captions" srcLang="pt" label="" />
         </audio>
 
-        <progress id="file" value={statusPlayer.percent} max="100" />
+        <input
+          type="range"
+          value={statusPlayer.percent}
+          min="0"
+          max="100"
+          step="0.01"
+          onMouseDown={() => setIsPlay(false)}
+          onMouseUp={() => setIsPlay(true)}
+          onChange={({ target }) => {
+          setStatusPlayer({
+            total: player.current.duration,
+            current: player.current.currentTime,
+            percent: Number(target.value)
+          })
+          player.current.currentTime = Number(target.value);
+        }
+        } />
+
       </div>
     </ContainerCard>
   )

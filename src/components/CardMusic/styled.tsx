@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ContainerCard = styled.div`
+export const ContainerCard = styled.div<{percent: number}>`
   /* para animacao */
   opacity: 0;
   transform: translateX(20px);
@@ -72,20 +72,34 @@ export const ContainerCard = styled.div`
     flex-direction: column;
     width: 80%;
   }
-  progress {
-    border-radius: 7px;
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    margin-right: 15px;
     width: 100%;
     height: 5px;
+    background: ${({ theme }) => theme.colors.greyText};
+    border-radius: 5px;
+    background-image: linear-gradient(${({ theme }) => theme.colors.orangeText},${({ theme }) => theme.colors.orangeText});
+    background-size: calc(${(props) => props.percent}% + 1px) 100%;
+    background-repeat: no-repeat;
   }
-  progress::-webkit-progress-bar {
-    background-color: ${({ theme }) => theme.colors.greyText};
-    border-radius: 8px;
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: ${({ theme }) => theme.colors.orangeText};
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
   }
-  progress::-webkit-progress-value {
-    background-color: ${({ theme }) => theme.colors.orangeText};
-    border-radius: 7px;
-  }
-  progress::-moz-progress-bar {
-    /* style rules */
+
+  input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
   }
 `
