@@ -5,6 +5,7 @@ export const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   width: 100%;
   height: calc(100vh - 4rem);
+  overflow: hidden;
   background: ${({ theme }) => theme.colors.background};
   @media (max-width: 970px) {
     overflow: auto;

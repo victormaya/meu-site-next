@@ -1,5 +1,6 @@
 import React from 'react'
 
+import CardMusic from '../components/CardMusic'
 import Cards from '../components/Cards'
 import Head from '../components/Head'
 import Loading from '../components/Loading'
@@ -22,19 +23,27 @@ function Skills({ data }: { data: IData[] }) {
     <ContainerDefaultPage onScroll={() => setScrollOn(!scrollOn)}>
       <Head title={data[0].type} />
       {data.length > 0 ? (
-        data.map((item) => (
-          <Cards
-            scrollOn={scrollOn}
-            imagem={item.image}
-            titulo={item.title}
-            key={item.title}
-            alt={item.title}
-            subtitulo={item.subtitle}
-            conteudo={item.content}
-            link={item.link}
-            file={item.file}
-          />
-        ))
+        data.map((item) =>
+          item.type !== 'music' ? (
+            <Cards
+              scrollOn={scrollOn}
+              imagem={item.image}
+              titulo={item.title}
+              key={item.title}
+              alt={item.title}
+              subtitulo={item.subtitle}
+              conteudo={item.content}
+              link={item.link}
+              file={item.file}
+            />
+          ) : (
+            <CardMusic
+              scrollOn={scrollOn}
+              title={item.title}
+              file={item.file}
+            />
+          )
+        )
       ) : (
         <Loading />
       )}
