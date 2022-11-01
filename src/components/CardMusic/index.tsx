@@ -54,14 +54,11 @@ function CardMusic({
               percent:
                 (player.current.currentTime / player.current.duration) * 100
             })
-          }
-
-          }
+          }}
           onEnded={() => setIsPlay(false)}
         >
           <track src="" kind="captions" srcLang="pt" label="" />
         </audio>
-
         <input
           type="range"
           value={statusPlayer.percent}
@@ -71,15 +68,14 @@ function CardMusic({
           onMouseDown={() => setIsPlay(false)}
           onMouseUp={() => setIsPlay(true)}
           onChange={({ target }) => {
-          setStatusPlayer({
-            total: player.current.duration,
-            current: player.current.currentTime,
-            percent: Number(target.value)
-          })
-          player.current.currentTime = Number(target.value);
-        }
-        } />
-
+            setStatusPlayer({
+              total: player.current.duration,
+              current: player.current.currentTime,
+              percent: Number(target.value)
+            })
+            player.current.currentTime = Number(target.value)
+          }}
+        />
       </div>
     </ContainerCard>
   )

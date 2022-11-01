@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ContainerCard = styled.div<{percent: number}>`
+export const ContainerCard = styled.div<{ percent: number }>`
   /* para animacao */
   opacity: 0;
   transform: translateX(20px);
@@ -73,19 +73,22 @@ export const ContainerCard = styled.div<{percent: number}>`
     width: 80%;
   }
 
-  input[type="range"] {
+  input[type='range'] {
     -webkit-appearance: none;
     margin-right: 15px;
     width: 100%;
     height: 5px;
     background: ${({ theme }) => theme.colors.greyText};
     border-radius: 5px;
-    background-image: linear-gradient(${({ theme }) => theme.colors.orangeText},${({ theme }) => theme.colors.orangeText});
+    background-image: linear-gradient(
+      ${({ theme }) => theme.colors.orangeText},
+      ${({ theme }) => theme.colors.orangeText}
+    );
     background-size: calc(${(props) => props.percent}% + 1px) 100%;
     background-repeat: no-repeat;
   }
 
-  input[type="range"]::-webkit-slider-thumb {
+  input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
@@ -93,10 +96,10 @@ export const ContainerCard = styled.div<{percent: number}>`
     background: ${({ theme }) => theme.colors.orangeText};
     cursor: ew-resize;
     box-shadow: 0 0 2px 0 #555;
-    transition: background .3s ease-in-out;
+    transition: background 0.3s ease-in-out;
   }
 
-  input[type=range]::-webkit-slider-runnable-track  {
+  input[type='range']::-webkit-slider-runnable-track {
     -webkit-appearance: none;
     box-shadow: none;
     border: none;
