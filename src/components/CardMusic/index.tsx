@@ -28,7 +28,6 @@ function CardMusic({
     percent: 0
   } as IStatusPlayer)
 
-
   function onPlayPause() {
     setIsPlay(!isPlaying)
     if (isPlaying) {
@@ -44,11 +43,11 @@ function CardMusic({
       <div className="title-progress">
         <h2>{title}</h2>
         <audio
-          preload='metadata'
+          preload="metadata"
           ref={player}
           src={`https://swnxabum.directus.app/assets/${file}.mp3`}
           onTimeUpdate={() => {
-            console.log(player.current.currentTime);
+            console.log(player.current.currentTime)
             setStatusPlayer({
               total: player.current.duration,
               current: player.current.currentTime,
