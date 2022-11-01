@@ -11,7 +11,6 @@ function HeadComponent({ title }: { title: string }) {
   const { dataHome } = useContext(HomeContext)
 
   const [url, setUrl] = React.useState('')
-  const titleToView = `Victor Maya | ${title}`
   const descriptionToView = dataHome.descricao
     ?.replace('AGE', MyAge().toString())
     .replace('YEARS', YearsExperience().toString())
@@ -23,7 +22,7 @@ function HeadComponent({ title }: { title: string }) {
 
   return (
     <NextSeo
-      title={titleToView}
+      title={title}
       description={descriptionToView}
       canonical={url}
       openGraph={{
@@ -31,13 +30,13 @@ function HeadComponent({ title }: { title: string }) {
         locale: 'pt_BR',
         url: 'https://victormayadev.com',
         site_name: title,
-        title: titleToView,
+        title: `Victor Maya | ${title}`,
         description: descriptionToView,
         profile: { firstName: 'Victor Maya', lastName: 'Nascimento Almeida' },
         images: [
           {
             url: 'https://swnxabum.directus.app/assets/14b2d43d-f834-4eec-93db-e4c395c36ee2',
-            alt: titleToView,
+            alt: `Victor Maya | ${title}`,
             width: 424,
             height: 424,
             type: 'image/jpeg'

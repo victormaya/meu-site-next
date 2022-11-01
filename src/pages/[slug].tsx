@@ -51,14 +51,25 @@ function Skills({ data }: { data: IData[] }) {
   )
 }
 
-export async function getServerSideProps({
-  resolvedUrl
-}: {
-  resolvedUrl: string
-}) {
-  const slug = resolvedUrl.split('/')[1]
+export async function getStaticPaths() {
+  let abas = [{ title: '', path: '' }]
+  await fetch('https://swnxabum.directus.app/items/abas').then(
+    async (response) => {
+      const json = await response.json()
+      abas = json.data
+    }
+  )
+
+  const paths = abas.map((aba) => ({
+    params: { slug: aba.path.toString() }
+  }))
+
+  return { paths, fallback: false }
+}
+
+export async function getStaticProps({ params }: { params: { slug: string } }) {
   let data = {}
-  await fetch(`https://swnxabum.directus.app/items/${slug}`).then(
+  await fetch(`https://swnxabum.directus.app/items/${params.slug}`).then(
     async (response) => {
       const json = await response.json()
       data = json.data
@@ -68,7 +79,8 @@ export async function getServerSideProps({
     props: {
       data
     },
-    notFound: !data && true
+    revalidate: 21600,
+
   }
 }
 
