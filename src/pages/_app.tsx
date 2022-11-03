@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import React from 'react'
 
 import { DefaultSeo } from 'next-seo'
@@ -18,8 +19,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <HomeContextProvider>
+      <DefaultSeo {...SEO} />
       <ThemeProvider theme={theme}>
-        <DefaultSeo {...SEO} />
         <Head>
           <meta
             property="og:image"

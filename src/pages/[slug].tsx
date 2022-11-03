@@ -1,8 +1,9 @@
 import React from 'react'
 
+import { NextSeo } from 'next-seo'
+
 import CardMusic from '../components/CardMusic'
 import Cards from '../components/Cards'
-import Head from '../components/Head'
 import Loading from '../components/Loading'
 import { ContainerDefaultPage } from '../styles/ContainerPagesStyled'
 
@@ -16,12 +17,12 @@ interface IData {
   file: string
 }
 
-function Skills({ data }: { data: IData[] }) {
+function Slug({ data }: { data: IData[] }) {
   const [scrollOn, setScrollOn] = React.useState(false)
 
   return (
     <ContainerDefaultPage onScroll={() => setScrollOn(!scrollOn)}>
-      <Head title={data[0].type} />
+      <NextSeo title={data[0].type} />
       {data.length > 0 ? (
         data.map((item) =>
           item.type !== 'Music' ? (
@@ -38,6 +39,7 @@ function Skills({ data }: { data: IData[] }) {
             />
           ) : (
             <CardMusic
+              key={item.title}
               scrollOn={scrollOn}
               title={item.title}
               file={item.file}
@@ -83,4 +85,4 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
   }
 }
 
-export default Skills
+export default Slug
