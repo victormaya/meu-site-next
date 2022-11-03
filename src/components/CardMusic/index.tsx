@@ -47,7 +47,6 @@ function CardMusic({
           ref={player}
           src={`https://swnxabum.directus.app/assets/${file}.mp3`}
           onTimeUpdate={() => {
-            console.log(player.current.currentTime)
             setStatusPlayer({
               total: player.current.duration,
               current: player.current.currentTime,
