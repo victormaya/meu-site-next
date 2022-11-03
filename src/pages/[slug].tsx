@@ -66,7 +66,7 @@ export async function getStaticPaths() {
     params: { slug: aba.path.toString() }
   }))
 
-  return { paths, fallback: true }
+  return { paths, fallback: false }
 }
 
 export async function getStaticProps({ params }: { params: { slug: string } }) {
