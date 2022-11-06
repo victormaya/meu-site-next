@@ -1,9 +1,8 @@
 import React from 'react'
 
-import { NextSeo } from 'next-seo'
-
 import CardMusic from '../components/CardMusic'
 import Cards from '../components/Cards'
+import Head from '../components/Head'
 import Loading from '../components/Loading'
 import { ContainerDefaultPage } from '../styles/ContainerPagesStyled'
 
@@ -22,7 +21,7 @@ function Slug({ data }: { data: IData[] }) {
 
   return (
     <ContainerDefaultPage onScroll={() => setScrollOn(!scrollOn)}>
-      <NextSeo title={data[0].type} />
+      <Head title={data[0].type} />
       {data.length > 0 ? (
         data.map((item) =>
           item.type !== 'Music' ? (
@@ -80,8 +79,7 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
   return {
     props: {
       data
-    },
-    revalidate: 21600
+    }
   }
 }
 

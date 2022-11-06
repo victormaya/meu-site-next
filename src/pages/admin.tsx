@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import Router from 'next/router'
 import styled from 'styled-components'
 
+import Head from '../components/Head'
 import Loading from '../components/Loading'
 
 function Pages() {
@@ -17,6 +18,7 @@ function Pages() {
 
   return (
     <div>
+      <Head title="Admin" />
       <H1>Redirecionando pro Admin</H1>
       <Loading />
     </div>

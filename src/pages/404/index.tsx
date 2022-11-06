@@ -1,7 +1,8 @@
 import React from 'react'
 
-import { NextSeo } from 'next-seo'
 import styled from 'styled-components'
+
+import Head from '../../components/Head'
 
 const P404 = styled.h1`
   color: ${({ theme }) => theme.colors.orangeText};
@@ -11,7 +12,7 @@ const P404 = styled.h1`
 function Page404() {
   return (
     <>
-      <NextSeo title="404" />
+      <Head title="404" />
       <P404>Página não encontrada :(</P404>
     </>
   )
