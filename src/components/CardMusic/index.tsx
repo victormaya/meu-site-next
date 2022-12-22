@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react'
 
 import Pause from '../../assets/svgs/Pause'
 import Play from '../../assets/svgs/Play'
-import useAnimation from '../../hooks/useAnimation'
 import { ContainerCard } from './styled'
 
 interface IStatusPlayer {
@@ -13,15 +12,12 @@ interface IStatusPlayer {
 
 function CardMusic({
   title,
-  file,
-  scrollOn
+  file
 }: {
   title: string
   file?: string
   scrollOn: boolean
 }) {
-  const card = React.useRef<HTMLHeadingElement>({} as HTMLHeadingElement)
-  useAnimation(card, scrollOn)
   const player = useRef({} as HTMLAudioElement)
   const [isPlaying, setIsPlay] = useState(false)
   const [statusPlayer, setStatusPlayer] = useState<IStatusPlayer>({
@@ -38,7 +34,7 @@ function CardMusic({
   }
 
   return (
-    <ContainerCard ref={card} percent={statusPlayer.percent}>
+    <ContainerCard percent={statusPlayer.percent}>
       <button onClick={onPlayPause}>{isPlaying ? <Pause /> : <Play />}</button>
       <div className="title-progress">
         <h2>{title}</h2>

@@ -11,7 +11,10 @@ export const ContainerCard = styled.div`
     transform: initial;
   }
 
-  background: ${({ theme }) => theme.colors.greyBg};
+  background: rgba(221, 221, 221, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 4fr;

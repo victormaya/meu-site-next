@@ -1,16 +1,12 @@
 import styled from 'styled-components'
 
 export const ContainerCard = styled.div<{ percent: number }>`
-  /* para animacao */
-  opacity: 0;
   transform: translateX(20px);
-  /* para animacao */
-  @media (max-width: 970px) {
-    /* nao ter animação no mobile de sumir e apaercer */
-    opacity: 1;
-    transform: initial;
-  }
-  background: ${({ theme }) => theme.colors.greyBg};
+
+  background: rgba(221, 221, 221, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+
   width: 80%;
   display: flex;
   align-items: center;
