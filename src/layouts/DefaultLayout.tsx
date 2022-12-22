@@ -14,6 +14,8 @@ function DefaultLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Container>
+        <div className="layer1" />
+        <div className="layer2" />
         {loading ? (
           <Loading />
         ) : (

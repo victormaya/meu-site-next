@@ -28,6 +28,45 @@ export const Container = styled.div`
     opacity: 1;
     transform: initial;
   }
+
+  .layer1 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%),
+      linear-gradient(
+        90deg,
+        rgba(254, 186, 17, 0.6) 12%,
+        rgba(186, 51, 52, 0.6) 47%
+      );
+    @media (max-width: 970px) {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 1) 30%
+        ),
+        linear-gradient(
+          90deg,
+          rgba(254, 186, 17, 0.6) 50%,
+          rgba(186, 51, 52, 0.6) 100%
+        );
+    }
+  }
+  .layer2 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: radial-gradient(
+      100% 293.01% at 0% 0%,
+      rgba(0, 0, 0, 0.42) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+  }
 `
 
 export const ContentLeft = styled.section`
@@ -103,4 +142,5 @@ export const ContentRight = styled.section`
   flex-direction: column;
   align-items: center;
   font-family: ${({ theme }) => theme.font.family.default};
+  z-index: 1;
 `
