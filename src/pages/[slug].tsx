@@ -52,35 +52,35 @@ function Slug({ data }: { data: IData[] }) {
   )
 }
 
-export async function getStaticPaths() {
-  let abas = [{ title: '', path: '' }]
-  await fetch('https://swnxabum.directus.app/items/abas').then(
-    async (response) => {
-      const json = await response.json()
-      abas = json.data
-    }
-  )
+// export async function getStaticPaths() {
+//   let abas = [{ title: '', path: '' }]
+//   await fetch('https://swnxabum.directus.app/items/abas').then(
+//     async (response) => {
+//       const json = await response.json()
+//       abas = json.data
+//     }
+//   )
 
-  const paths = abas.map((aba) => ({
-    params: { slug: aba.path.toString() }
-  }))
+//   const paths = abas.map((aba) => ({
+//     params: { slug: aba.path.toString() }
+//   }))
 
-  return { paths, fallback: false }
-}
+//   return { paths, fallback: false }
+// }
 
-export async function getStaticProps({ params }: { params: { slug: string } }) {
-  let data = {}
-  await fetch(`https://swnxabum.directus.app/items/${params.slug}`).then(
-    async (response) => {
-      const json = await response.json()
-      data = json.data
-    }
-  )
-  return {
-    props: {
-      data
-    }
-  }
-}
+// export async function getStaticProps({ params }: { params: { slug: string } }) {
+//   let data = {}
+//   await fetch(`https://swnxabum.directus.app/items/${params.slug}`).then(
+//     async (response) => {
+//       const json = await response.json()
+//       data = json.data
+//     }
+//   )
+//   return {
+//     props: {
+//       data
+//     }
+//   }
+// }
 
 export default Slug

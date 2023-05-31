@@ -20,25 +20,26 @@ function DefaultLayout({ children }: { children: React.ReactNode }) {
           <Loading />
         ) : (
           <ContentLeft>
-            <div className="perfil animaLeft">
+            {/* <div className="perfil animaLeft">
               <img
                 src={`https://swnxabum.directus.app/assets/${dataHome.profile}`}
                 alt="Foto de Perfil"
               />
-            </div>
+            </div> */}
             <div className="textos animaLeft">
-              <h1>{dataHome.apresentacao}</h1>
-              <p>
+              <h1>EM MANUTENÇÃO!</h1>
+              {/* <h1>{dataHome.apresentacao}</h1> */}
+              {/* <p>
                 {dataHome.descricao
                   ?.replace('AGE', MyAge().toString())
                   .replace('YEARS', YearsExperience().toString())}
-              </p>
+              </p> */}
             </div>
           </ContentLeft>
         )}
         <ContentRight>
           <Header />
-          {children}
+          {/* {children} */}
         </ContentRight>
       </Container>
       <Footer />
