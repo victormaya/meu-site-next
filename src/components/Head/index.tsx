@@ -5,8 +5,20 @@ import Router from 'next/router'
 
 import profile from '../../api/profile'
 
+interface TitleMap {
+  [key: string]: string
+}
+
 function HeadComponent({ title }: { title: string }) {
   const [url, setUrl] = React.useState('')
+
+  const TitleToView: TitleMap = {
+    skills: 'Skills',
+    experiencia: 'Experiência',
+    portifolio: 'Portifólio',
+    contato: 'Contato',
+    curriculo: 'Currículo'
+  }
 
   React.useEffect(() => {
     const generatedURL = `https://victormayadev.com${Router.pathname}`
@@ -15,7 +27,7 @@ function HeadComponent({ title }: { title: string }) {
 
   return (
     <NextSeo
-      title={title}
+      title={TitleToView[title]}
       description={profile.apresentacao + profile.descricao}
       canonical={url}
       openGraph={{
