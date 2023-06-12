@@ -1,3 +1,14 @@
+import github from '../assets/contato/GitHub.jpg'
+import email from '../assets/contato/gmail.png'
+import linkedin from '../assets/contato/linkedin.png'
+import whatsapp from '../assets/contato/wpp.jpeg'
+import cv from '../assets/cv.png'
+import phoenix from '../assets/experiencia/Phoenix.jpg'
+import samba from '../assets/experiencia/samba.jpeg'
+import ufma from '../assets/experiencia/UFMA.jpg'
+import unasus from '../assets/experiencia/unasus.png'
+import usp from '../assets/experiencia/usp.png'
+import ambev from '../assets/portifolio/ambev.png'
 import bootstrap from '../assets/skills/bootstrap.png'
 import figma from '../assets/skills/figma.png'
 import git from '../assets/skills/git.png'
@@ -19,8 +30,8 @@ export const abas = [
   { title: 'Experiência', path: 'experiencia' },
   { title: 'Portifólio', path: 'portifolio' },
   { title: 'Contato', path: 'contato' },
-  { title: 'Baixar Currículo', path: 'curriculo' },
-  { title: 'Extra', path: 'extra' }
+  { title: 'Currículo', path: 'curriculo' }
+  // { title: 'Extra', path: 'extra' }
 ]
 export const content = {
   skills: [
@@ -158,6 +169,120 @@ export const content = {
       content: '',
       link: '',
       file: ''
+    }
+  ],
+  experiencia: [
+    {
+      type: 'experiencia',
+      image: ufma.src,
+      title: 'Interdisciplinar em Ciência e Tecnologia',
+      subtitle: 'Universidade Federal do Maranhão (2015-2019)',
+      file: ''
+    },
+    {
+      type: 'experiencia',
+      image: samba.src,
+      title: 'Samba Digital',
+      subtitle: 'DEZEMBRO 2021-Atual',
+      content:
+        'Atualmente atuo como Front-end Pleno na Samba Digital, onde fui responsável pelo desenvolvimento do front-end do projeto VisitaAmbev, um sistema de agendamento de visitas para cervejarias da Ambev, que inclui uma tour virtual 360º. Além disso, colaborei em projetos de outras empresas renomadas, como HALU GAMASHI, MHost - AdultVip, SEBRAE, A&C, Ouro Fino, Houer, entre outras, aplicando minhas habilidades em front-end para criar interfaces intuitivas e responsivas, visando a entrega de uma experiência de alta qualidade aos usuários.',
+      file: ''
+    },
+    {
+      type: 'experiencia',
+      image: usp.src,
+      title: 'USPX/USP',
+      subtitle: '2021',
+      content:
+        'Realizei a implementação front-end do portal USPX, utilizando Next.js. O site proporcionava uma visualização de notícias, cursos e webinários, além de ser totalmente responsivo. Foi aplicada uma estrutura de acessibilidade, com recursos como modo de alto contraste, navegação pelo teclado e ajuste de tamanho de fontes. O site estava disponível em três idiomas: português, espanhol e inglês.',
+      file: ''
+    },
+    {
+      type: 'experiencia',
+      image: unasus.src,
+      title: 'Una-Sus/UFMA',
+      subtitle: '2020-2021',
+      content:
+        'Como front-end, desenvolvi infográficos interativos em ReactJS voltados para alunos da área da saúde. Esses infográficos eram adaptáveis a diferentes dispositivos, desde smartphones até televisores. Como parte da equipe, fui responsável pela implementação do modelo padrão do infográfico, o qual otimizou o processo de criação de novos conteúdos. Além disso, desempenhei um papel fundamental na construção da acessibilidade, incorporando recursos como modo de alto contraste, navegação pelo teclado, ajuste de tamanho de fontes e suporte para leitores de tela. Essas implementações visavam garantir uma experiência inclusiva e acessível para todos os usuários.',
+      file: ''
+    },
+    {
+      type: 'experiencia',
+      image: phoenix.src,
+      title: 'Phoenix App',
+      subtitle: 'OUTUBRO/2020-OUTUBRO/2021',
+      content:
+        'Por um ano, atuei como o principal desenvolvedor front-end de um aplicativo em React Native para a escola de Inglês Phoenix em Pedreiras-MA. Fui responsável pelo UI/UX e pela programação front-end do aplicativo. Implementei recursos como um music player para audição de áudios em inglês, um leitor de livros com marcador de página, uma seção de posts com curiosidades em inglês, uma seção de vídeos para as aulas dos professores e um sistema de gestão de contratos. Além disso, criei um dashboard em ReactJS para administração do aplicativo, acessível somente para o admin e professores.',
+      file: ''
+    }
+  ],
+  portifolio: [
+    {
+      type: 'portifolio',
+      image: ambev.src,
+      title: 'Visita Ambev',
+      subtitle: '',
+      content: '',
+      link: 'https://www.visitaambev.com.br/home',
+      file: ''
+    },
+    {
+      type: 'portifolio',
+      image: phoenix.src,
+      title: 'Phoenix App',
+      subtitle: '',
+      content: '',
+      link: 'https://play.google.com/store/apps/details?id=com.phoenix.english.course',
+      file: ''
+    }
+  ],
+  contato: [
+    {
+      type: 'contato',
+      image: whatsapp.src,
+      title: 'Whatsapp',
+      subtitle: '',
+      content: '',
+      link: 'https://api.whatsapp.com/send?phone=5599982756405',
+      file: ''
+    },
+    {
+      type: 'contato',
+      image: email.src,
+      title: 'E-mail',
+      subtitle: '',
+      content: 'victor.maya42@gmail.com',
+      link: '',
+      file: ''
+    },
+    {
+      type: 'contato',
+      image: linkedin.src,
+      title: 'LinkedIn',
+      subtitle: '',
+      content: '',
+      link: 'https://www.linkedin.com/in/victor-maya/',
+      file: ''
+    },
+    {
+      type: 'contato',
+      image: github.src,
+      title: 'Github',
+      subtitle: '',
+      content: '',
+      link: 'https://github.com/victormaya',
+      file: ''
+    }
+  ],
+  curriculo: [
+    {
+      type: 'curriculo',
+      image: cv.src,
+      title: 'Baixar Currículo',
+      subtitle: '',
+      content: '',
+      link: '/cv.pdf',
+      file: 'CV - Victor Maya'
     }
   ]
 }
