@@ -41,7 +41,7 @@ function CardMusic({
         <audio
           preload="metadata"
           ref={player}
-          src={`https://swnxabum.directus.app/assets/${file}.mp3`}
+          src={file}
           onTimeUpdate={() => {
             setStatusPlayer({
               total: player.current.duration,

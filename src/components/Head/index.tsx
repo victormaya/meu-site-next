@@ -1,19 +1,12 @@
-import React, { useContext } from 'react'
+import React from 'react'
 
 import { NextSeo } from 'next-seo'
 import Router from 'next/router'
 
-import { HomeContext } from '../../context/homeContext'
-import MyAge from '../../functions/MyAge'
-import YearsExperience from '../../functions/YearsExperience'
+import profile from '../../api/profile'
 
 function HeadComponent({ title }: { title: string }) {
-  const { dataHome } = useContext(HomeContext)
-
   const [url, setUrl] = React.useState('')
-  const descriptionToView = dataHome.descricao
-    ?.replace('AGE', MyAge().toString())
-    .replace('YEARS', YearsExperience().toString())
 
   React.useEffect(() => {
     const generatedURL = `https://victormayadev.com${Router.pathname}`
@@ -23,7 +16,7 @@ function HeadComponent({ title }: { title: string }) {
   return (
     <NextSeo
       title={title}
-      description={descriptionToView}
+      description={profile.apresentacao + profile.descricao}
       canonical={url}
       openGraph={{
         type: 'website',
@@ -31,11 +24,11 @@ function HeadComponent({ title }: { title: string }) {
         url: 'https://victormayadev.com',
         site_name: title,
         title,
-        description: descriptionToView,
+        description: profile.apresentacao + profile.descricao,
         profile: { firstName: 'Victor Maya', lastName: 'Nascimento Almeida' },
         images: [
           {
-            url: 'https://swnxabum.directus.app/assets/14b2d43d-f834-4eec-93db-e4c395c36ee2',
+            url: profile.image,
             alt: title,
             width: 424,
             height: 424,

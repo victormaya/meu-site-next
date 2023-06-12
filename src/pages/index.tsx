@@ -4,9 +4,9 @@ import Head from 'next/head'
 import Router from 'next/router'
 
 function Home() {
-  // React.useEffect(() => {
-  //   Router.push('/skills')
-  // }, [])
+  React.useEffect(() => {
+    Router.push('/skills')
+  }, [])
 
   return (
     <div>

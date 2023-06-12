@@ -28,7 +28,7 @@ function Cards({
   return (
     <ContainerCard ref={card}>
       <div className="image">
-        <img src={`https://swnxabum.directus.app/assets/${imagem}`} alt={alt} />
+        <img src={imagem} alt={alt} />
       </div>
       <div>
         <h2>{titulo}</h2>
@@ -45,7 +45,7 @@ function Cards({
         {(link || file) && (
           <p>
             <a
-              href={link || `https://swnxabum.directus.app/assets/${file}.pdf`}
+              href={link || file}
               target="_blank"
               rel="noreferrer"
               download={file}

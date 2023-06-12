@@ -1,11 +1,11 @@
 import React from 'react'
 
+import { abas, content } from '../api/content'
 import CardMusic from '../components/CardMusic'
 import Cards from '../components/Cards'
 import Head from '../components/Head'
 import Loading from '../components/Loading'
 import { ContainerDefaultPage } from '../styles/ContainerPagesStyled'
-
 interface IData {
   image: string
   title: string
@@ -52,35 +52,24 @@ function Slug({ data }: { data: IData[] }) {
   )
 }
 
-// export async function getStaticPaths() {
-//   let abas = [{ title: '', path: '' }]
-//   await fetch('https://swnxabum.directus.app/items/abas').then(
-//     async (response) => {
-//       const json = await response.json()
-//       abas = json.data
-//     }
-//   )
+export async function getStaticPaths() {
+  const paths = abas.map((aba) => ({
+    params: { slug: aba.path }
+  }))
 
-//   const paths = abas.map((aba) => ({
-//     params: { slug: aba.path.toString() }
-//   }))
+  return { paths, fallback: false }
+}
 
-//   return { paths, fallback: false }
-// }
+export async function getStaticProps({ params }: { params: { slug: string } }) {
+  const data = content[params.slug as keyof typeof content] as unknown as {
+    [key: string]: []
+  }
 
-// export async function getStaticProps({ params }: { params: { slug: string } }) {
-//   let data = {}
-//   await fetch(`https://swnxabum.directus.app/items/${params.slug}`).then(
-//     async (response) => {
-//       const json = await response.json()
-//       data = json.data
-//     }
-//   )
-//   return {
-//     props: {
-//       data
-//     }
-//   }
-// }
+  return {
+    props: {
+      data
+    }
+  }
+}
 
 export default Slug
