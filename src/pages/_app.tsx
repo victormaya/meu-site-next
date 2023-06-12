@@ -7,14 +7,13 @@ import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 
 import SEO from '../../next-seo.config'
-import { HomeContextProvider } from '../context/homeContext'
 import DefaultLayout from '../layouts/DefaultLayout'
 import { GlobalStyles } from '../styles/global-styles'
 import { theme } from '../styles/theme'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <HomeContextProvider>
+    <>
       <DefaultSeo {...SEO} />
       <ThemeProvider theme={theme}>
         <Head>
@@ -42,7 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <GlobalStyles />
         </DefaultLayout>
       </ThemeProvider>
-    </HomeContextProvider>
+    </>
   )
 }
 
