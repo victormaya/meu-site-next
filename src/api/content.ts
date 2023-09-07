@@ -24,6 +24,7 @@ import styled from '../assets/skills/styled.png'
 import tail from '../assets/skills/tailwind.png'
 import ts from '../assets/skills/TS.png'
 import xd from '../assets/skills/XD.png'
+import rimasraras from '../assets/portifolio/rimasraras.png'
 
 export const abas = [
   { title: 'Skills', path: 'skills' },
@@ -233,6 +234,15 @@ export const content = {
       subtitle: '',
       content: '',
       link: 'https://play.google.com/store/apps/details?id=com.phoenix.english.course',
+      file: ''
+    },
+    {
+      type: 'portifolio',
+      image: rimasraras.src,
+      title: 'Rimas Raras',
+      subtitle: '',
+      content: '',
+      link: 'https://rimasraras.com.br/',
       file: ''
     }
   ],
