@@ -5,10 +5,12 @@ import whatsapp from '../assets/contato/wpp.jpeg'
 import cv from '../assets/cv.png'
 import phoenix from '../assets/experiencia/Phoenix.jpg'
 import samba from '../assets/experiencia/samba.jpeg'
+import listme from '../assets/experiencia/listme.jpeg'
 import ufma from '../assets/experiencia/UFMA.jpg'
 import unasus from '../assets/experiencia/unasus.png'
 import usp from '../assets/experiencia/usp.png'
 import ambev from '../assets/portifolio/ambev.png'
+import rimasraras from '../assets/portifolio/rimasraras.png'
 import bootstrap from '../assets/skills/bootstrap.png'
 import figma from '../assets/skills/figma.png'
 import git from '../assets/skills/git.png'
@@ -24,7 +26,6 @@ import styled from '../assets/skills/styled.png'
 import tail from '../assets/skills/tailwind.png'
 import ts from '../assets/skills/TS.png'
 import xd from '../assets/skills/XD.png'
-import rimasraras from '../assets/portifolio/rimasraras.png'
 
 export const abas = [
   { title: 'Skills', path: 'skills' },
@@ -182,9 +183,18 @@ export const content = {
     },
     {
       type: 'experiencia',
+      image: listme.src,
+      title: 'ListMe',
+      subtitle: 'SETEMBRO/2023– AGOSTO/2024',
+      content:
+        'Atuei como Front-end Sênior na Listme, uma plataforma de catalogação de produtos voltada à integração com múltiplas lojas digitais. Utilizando ReactJS, fui responsável por implementar interfaces intuitivas que facilitavam o cadastro, organização e exibição de produtos. Durante o período, destaquei-me pela otimização de desempenho da aplicação, garantindo maior fluidez e responsividade na navegação. Também desenvolvi melhorias significativas em usabilidade e estabilidade, além de implementar soluções baseadas em inteligência artificial para tornar o processo de catalogação mais inteligente e automatizado.',
+      file: ''
+    },
+    {
+      type: 'experiencia',
       image: samba.src,
       title: 'Samba Digital',
-      subtitle: 'DEZEMBRO 2021-Atual',
+      subtitle: 'DEZEMBRO/2021-SETEMBRO/2023',
       content:
         'Atualmente atuo como Front-end Pleno na Samba Digital, onde fui responsável pelo desenvolvimento do front-end do projeto VisitaAmbev, um sistema de agendamento de visitas para cervejarias da Ambev, que inclui uma tour virtual 360º. Além disso, colaborei em projetos de outras empresas renomadas, como HALU GAMASHI, MHost - AdultVip, SEBRAE, A&C, Ouro Fino, Houer, entre outras, aplicando minhas habilidades em front-end para criar interfaces intuitivas e responsivas, visando a entrega de uma experiência de alta qualidade aos usuários.',
       file: ''
