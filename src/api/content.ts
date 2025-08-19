@@ -3,9 +3,10 @@ import email from '../assets/contato/gmail.png'
 import linkedin from '../assets/contato/linkedin.png'
 import whatsapp from '../assets/contato/wpp.jpeg'
 import cv from '../assets/cv.png'
+import listme from '../assets/experiencia/listme.jpeg'
 import phoenix from '../assets/experiencia/Phoenix.jpg'
 import samba from '../assets/experiencia/samba.jpeg'
-import listme from '../assets/experiencia/listme.jpeg'
+import todos from '../assets/experiencia/todos.jpeg'
 import ufma from '../assets/experiencia/UFMA.jpg'
 import unasus from '../assets/experiencia/unasus.png'
 import usp from '../assets/experiencia/usp.png'
@@ -179,6 +180,15 @@ export const content = {
       image: ufma.src,
       title: 'Interdisciplinar em Ciência e Tecnologia',
       subtitle: 'Universidade Federal do Maranhão (2015-2019)',
+      file: ''
+    },
+    {
+      type: 'experiencia',
+      image: todos.src,
+      title: 'Todos Empreendimentos',
+      subtitle: 'AGOSTO/2024 – ATUAL',
+      content:
+        'Atuo como Front-end Sênior na Todos Empreendimentos, contribuindo para o desenvolvimento de projetos internos da empresa. Sou responsável pela implementação de interfaces modernas e performáticas, além de participar ativamente em iniciativas que aprimoram a segurança do front-end. Já tive papel de grande importância na criação e fortalecimento de soluções voltadas à proteção e confiabilidade das aplicações, sempre buscando entregar experiências mais seguras e eficientes.',
       file: ''
     },
     {

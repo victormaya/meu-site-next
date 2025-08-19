@@ -3,7 +3,7 @@ import { NextSeoProps } from 'next-seo'
 import YearsExperience from './src/functions/YearsExperience'
 
 const title = 'Victor Maya | Desenvolvedor Front-End'
-const description = `Olá, sou Victor Maya, um desenvolvedor front-end pleno com ${YearsExperience()}+ anos de experiência em JavaScript, ReactJS e NextJS. Graduado em Ciência e Tecnologia pela UFMA, sou apaixonado por tecnologia, viagens e música. Estou pronto para colaborar em projetos desafiadores e transformar ideias em realidade. Vivo entre o analógico e o digital.`
+const description = `Olá, sou Victor Maya, um desenvolvedor front-end pleno com ${YearsExperience()}+ anos de experiência em JavaScript, ReactJS e NextJS. Graduado em Ciência e Tecnologia pela UFMA, sou apaixonado por tecnologia, viagens e música. Estou pronto para colaborar em projetos desafiadores e transformar ideias em realidade.`
 
 export default {
   title,
