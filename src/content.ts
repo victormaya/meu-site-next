@@ -33,7 +33,7 @@ export const abas = [
   { title: 'Experiência', path: 'experiencia' },
   { title: 'Portifólio', path: 'portifolio' },
   { title: 'Contato', path: 'contato' },
-  // { title: 'Currículo', path: 'curriculo' }
+  { title: 'Currículo', path: 'curriculo' }
   // { title: 'Extra', path: 'extra' }
 ]
 export const content = {

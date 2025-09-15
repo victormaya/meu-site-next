@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -13,13 +12,12 @@ function Header() {
     <ContainerHeader>
       <nav>
         {abas.map((item) => (
-          <Link href={`/${item.path}`} key={item.title}>
-            <a
-              href={item.title}
-              className={asPath === `/${item.path}` ? 'active' : ''}
-            >
-              {item.title}
-            </a>
+          <Link
+            href={`/${item.path}`}
+            key={item.title}
+            className={asPath === `/${item.path}` ? 'active' : ''}
+          >
+            {item.title}
           </Link>
         ))}
       </nav>
