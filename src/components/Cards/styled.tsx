@@ -86,6 +86,7 @@ export const ContainerCard = styled.div`
     font-weight: bold;
     line-height: 2;
   }
+
   p {
     color: ${({ theme }) => theme.colors.greyText};
     line-height: 1.5rem;
@@ -96,4 +97,7 @@ export const ContainerCard = styled.div`
       margin-bottom: 0;
     }
   }
-`
+  @media (max-width: 970px) {
+    h3, h2,p{ text-align: center;}
+   }
+  `
