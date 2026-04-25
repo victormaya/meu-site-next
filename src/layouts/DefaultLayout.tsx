@@ -9,7 +9,9 @@ import { Container, Sidebar, MainContent, PageHeader } from './styled'
 
 function DefaultLayout({ children }: { children: React.ReactNode }) {
   const { asPath } = useRouter()
-  const currentAba = abas.find((a) => `/${a.path}` === asPath)
+  const currentAba = abas.find((a) =>
+    a.path === '' ? asPath === '/' : `/${a.path}` === asPath
+  )
 
   return (
     <Container>
@@ -28,15 +30,20 @@ function DefaultLayout({ children }: { children: React.ReactNode }) {
         <div className="divider" />
 
         <nav>
-          {abas.map((aba) => (
-            <Link
-              href={`/${aba.path}`}
-              key={aba.path}
-              className={`nav-item ${asPath === `/${aba.path}` ? 'active' : ''}`}
-            >
-              {aba.title}
-            </Link>
-          ))}
+          {abas.map((aba) => {
+            const href = aba.path === '' ? '/' : `/${aba.path}`
+            const isActive =
+              aba.path === '' ? asPath === '/' : asPath === `/${aba.path}`
+            return (
+              <Link
+                href={href}
+                key={aba.path || 'home'}
+                className={`nav-item ${isActive ? 'active' : ''}`}
+              >
+                {aba.title}
+              </Link>
+            )
+          })}
         </nav>
 
         <div className="divider" />

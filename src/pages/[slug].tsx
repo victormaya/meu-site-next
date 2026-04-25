@@ -60,9 +60,11 @@ function Slug({ data }: { data: IData[] }) {
 }
 
 export async function getStaticPaths() {
-  const paths = abas.map((aba) => ({
-    params: { slug: aba.path },
-  }))
+  const paths = abas
+    .filter((aba) => aba.path !== '')
+    .map((aba) => ({
+      params: { slug: aba.path },
+    }))
 
   return { paths, fallback: false }
 }
