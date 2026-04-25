@@ -29,19 +29,20 @@ import ts from '../assets/skills/TS.png'
 import xd from '../assets/skills/XD.png'
 
 export const abas = [
+  { title: 'Home', path: '' },
   { title: 'Skills', path: 'skills' },
   { title: 'Experiência', path: 'experiencia' },
-  { title: 'Portifólio', path: 'portifolio' },
+  { title: 'Portfólio', path: 'portifolio' },
   { title: 'Contato', path: 'contato' },
-  // { title: 'Currículo', path: 'curriculo' }
-  // { title: 'Extra', path: 'extra' }
+  { title: 'Currículo', path: 'curriculo' }
 ]
+
 export const content = {
   skills: [
     {
       type: 'skills',
       image: ts.src,
-      title: 'Typescript',
+      title: 'TypeScript',
       subtitle: '',
       content: '',
       link: '',
@@ -50,7 +51,7 @@ export const content = {
     {
       type: 'skills',
       image: reactjs.src,
-      title: 'ReactJs',
+      title: 'React',
       subtitle: '',
       content: '',
       link: '',
@@ -68,7 +69,7 @@ export const content = {
     {
       type: 'skills',
       image: next.src,
-      title: 'NextJs',
+      title: 'Next.js',
       subtitle: '',
       content: '',
       link: '',
@@ -77,7 +78,7 @@ export const content = {
     {
       type: 'skills',
       image: jest.src,
-      title: 'Jest + Testing Library (Testes unitários), TDD',
+      title: 'Jest & Testing Library',
       subtitle: '',
       content: '',
       link: '',
@@ -112,8 +113,8 @@ export const content = {
     },
     {
       type: 'skills',
-      image: bootstrap.src,
-      title: 'Bootstrap',
+      image: tail.src,
+      title: 'Tailwind CSS',
       subtitle: '',
       content: '',
       link: '',
@@ -122,7 +123,7 @@ export const content = {
     {
       type: 'skills',
       image: material.src,
-      title: 'MateiralUI',
+      title: 'Material UI',
       subtitle: '',
       content: '',
       link: '',
@@ -131,7 +132,7 @@ export const content = {
     {
       type: 'skills',
       image: radix.src,
-      title: 'RadixUI',
+      title: 'Radix UI',
       subtitle: '',
       content: '',
       link: '',
@@ -139,8 +140,8 @@ export const content = {
     },
     {
       type: 'skills',
-      image: tail.src,
-      title: 'Tailwind',
+      image: bootstrap.src,
+      title: 'Bootstrap',
       subtitle: '',
       content: '',
       link: '',
@@ -158,7 +159,7 @@ export const content = {
     {
       type: 'skills',
       image: xd.src,
-      title: 'AdobeXD',
+      title: 'Adobe XD',
       subtitle: '',
       content: '',
       link: '',
@@ -178,62 +179,63 @@ export const content = {
     {
       type: 'experiencia',
       image: ufma.src,
-      title: 'Interdisciplinar em Ciência e Tecnologia',
-      subtitle: 'Universidade Federal do Maranhão (2015-2019)',
+      title: 'Bacharelado Interdisciplinar em Ciência e Tecnologia',
+      subtitle: 'Universidade Federal do Maranhão · 2015 – 2019',
+      content: '',
       file: ''
     },
     {
       type: 'experiencia',
       image: todos.src,
       title: 'Todos Empreendimentos',
-      subtitle: 'AGOSTO/2024 – ATUAL',
+      subtitle: 'Front-End Sênior · Agosto 2024 – Atual',
       content:
-        'Atuo como Front-end Sênior na Todos Empreendimentos, contribuindo para o desenvolvimento de projetos internos da empresa. Sou responsável pela implementação de interfaces modernas e performáticas, além de participar ativamente em iniciativas que aprimoram a segurança do front-end. Já tive papel de grande importância na criação e fortalecimento de soluções voltadas à proteção e confiabilidade das aplicações, sempre buscando entregar experiências mais seguras e eficientes.',
+        'Responsável por projetos críticos de segurança e performance de interfaces. Liderei a implementação de soluções que blindaram o front-end contra vulnerabilidades, entregando telas modernas e confiáveis com React e TypeScript.',
       file: ''
     },
     {
       type: 'experiencia',
       image: listme.src,
       title: 'ListMe',
-      subtitle: 'SETEMBRO/2023– AGOSTO/2024',
+      subtitle: 'Front-End Sênior · Setembro 2023 – Agosto 2024',
       content:
-        'Atuei como Front-end Sênior na Listme, uma plataforma de catalogação de produtos voltada à integração com múltiplas lojas digitais. Utilizando ReactJS, fui responsável por implementar interfaces intuitivas que facilitavam o cadastro, organização e exibição de produtos. Durante o período, destaquei-me pela otimização de desempenho da aplicação, garantindo maior fluidez e responsividade na navegação. Também desenvolvi melhorias significativas em usabilidade e estabilidade, além de implementar soluções baseadas em inteligência artificial para tornar o processo de catalogação mais inteligente e automatizado.',
+        'Em uma plataforma de catálogos integrada a múltiplos marketplaces, otimizei a performance da aplicação e implementei IA para automatizar o cadastro de produtos — reduzindo significativamente o tempo de catalogação.',
       file: ''
     },
     {
       type: 'experiencia',
       image: samba.src,
       title: 'Samba Digital',
-      subtitle: 'DEZEMBRO/2021-SETEMBRO/2023',
+      subtitle: 'Front-End Pleno · Dezembro 2021 – Setembro 2023',
       content:
-        'Atualmente atuo como Front-end Pleno na Samba Digital, onde fui responsável pelo desenvolvimento do front-end do projeto VisitaAmbev, um sistema de agendamento de visitas para cervejarias da Ambev, que inclui uma tour virtual 360º. Além disso, colaborei em projetos de outras empresas renomadas, como HALU GAMASHI, MHost - AdultVip, SEBRAE, A&C, Ouro Fino, Houer, entre outras, aplicando minhas habilidades em front-end para criar interfaces intuitivas e responsivas, visando a entrega de uma experiência de alta qualidade aos usuários.',
+        'Desenvolvi o front-end do VisitaAmbev — sistema de agendamento de visitas às cervejarias da Ambev com tour virtual 360°. Também atuei em projetos para SEBRAE, Ouro Fino, Houer e outros clientes da carteira.',
       file: ''
     },
     {
       type: 'experiencia',
       image: usp.src,
-      title: 'USPX/USP',
-      subtitle: '2021',
+      title: 'USPX / USP',
+      subtitle: 'Front-End · 2021',
       content:
-        'Realizei a implementação front-end do portal USPX, utilizando Next.js. O site proporcionava uma visualização de notícias, cursos e webinários, além de ser totalmente responsivo. Foi aplicada uma estrutura de acessibilidade, com recursos como modo de alto contraste, navegação pelo teclado e ajuste de tamanho de fontes. O site estava disponível em três idiomas: português, espanhol e inglês.',
+        'Portal de notícias, cursos e webinários da USP desenvolvido em Next.js. Acessibilidade completa — alto contraste, navegação por teclado, ajuste de fontes — e suporte a três idiomas: português, espanhol e inglês.',
       file: ''
     },
     {
       type: 'experiencia',
       image: unasus.src,
-      title: 'Una-Sus/UFMA',
-      subtitle: '2020-2021',
+      title: 'UNA-SUS / UFMA',
+      subtitle: 'Front-End · 2020 – 2021',
       content:
-        'Como front-end, desenvolvi infográficos interativos em ReactJS voltados para alunos da área da saúde. Esses infográficos eram adaptáveis a diferentes dispositivos, desde smartphones até televisores. Como parte da equipe, fui responsável pela implementação do modelo padrão do infográfico, o qual otimizou o processo de criação de novos conteúdos. Além disso, desempenhei um papel fundamental na construção da acessibilidade, incorporando recursos como modo de alto contraste, navegação pelo teclado, ajuste de tamanho de fontes e suporte para leitores de tela. Essas implementações visavam garantir uma experiência inclusiva e acessível para todos os usuários.',
+        'Infográficos interativos em ReactJS para cursos de saúde, responsivos de smartphones a TVs. Fui responsável pelo template base e pela acessibilidade: leitor de tela, alto contraste e navegação por teclado.',
       file: ''
     },
     {
       type: 'experiencia',
       image: phoenix.src,
       title: 'Phoenix App',
-      subtitle: 'OUTUBRO/2020-OUTUBRO/2021',
+      subtitle: 'Front-End · Outubro 2020 – Outubro 2021',
       content:
-        'Por um ano, atuei como o principal desenvolvedor front-end de um aplicativo em React Native para a escola de Inglês Phoenix em Pedreiras-MA. Fui responsável pelo UI/UX e pela programação front-end do aplicativo. Implementei recursos como um music player para audição de áudios em inglês, um leitor de livros com marcador de página, uma seção de posts com curiosidades em inglês, uma seção de vídeos para as aulas dos professores e um sistema de gestão de contratos. Além disso, criei um dashboard em ReactJS para administração do aplicativo, acessível somente para o admin e professores.',
+        'Aplicativo completo em React Native para escola de inglês: music player, leitor de livros com marcador de página, área de vídeos e gestão de contratos. Dashboard administrativo em ReactJS para gestão interna.',
       file: ''
     }
   ],
@@ -242,8 +244,9 @@ export const content = {
       type: 'portifolio',
       image: ambev.src,
       title: 'Visita Ambev',
-      subtitle: '',
-      content: '',
+      subtitle: 'Sistema de agendamento · Tour Virtual 360°',
+      content:
+        'Plataforma de agendamento de visitas às cervejarias da Ambev com tour virtual imersivo em 360°. Desenvolvido durante meu tempo na Samba Digital.',
       link: 'https://www.visitaambev.com.br/home',
       file: ''
     },
@@ -251,8 +254,9 @@ export const content = {
       type: 'portifolio',
       image: phoenix.src,
       title: 'Phoenix App',
-      subtitle: '',
-      content: '',
+      subtitle: 'React Native · App educacional',
+      content:
+        'App de inglês com music player, leitor de livros, área de vídeos dos professores e sistema de gestão de contratos.',
       link: 'https://play.google.com/store/apps/details?id=com.phoenix.english.course',
       file: ''
     },
@@ -260,8 +264,9 @@ export const content = {
       type: 'portifolio',
       image: rimasraras.src,
       title: 'Rimas Raras',
-      subtitle: '',
-      content: '',
+      subtitle: 'Projeto musical independente',
+      content:
+        'Plataforma musical com player, letras e um universo sonoro próprio. Um projeto pessoal que une música e tecnologia.',
       link: 'https://rimasraras.com.br/',
       file: ''
     }
@@ -270,8 +275,8 @@ export const content = {
     {
       type: 'contato',
       image: whatsapp.src,
-      title: 'Whatsapp',
-      subtitle: '',
+      title: 'WhatsApp',
+      subtitle: 'Respondo rápido',
       content: '',
       link: 'https://api.whatsapp.com/send?phone=5599982756405',
       file: ''
@@ -280,16 +285,16 @@ export const content = {
       type: 'contato',
       image: email.src,
       title: 'E-mail',
-      subtitle: '',
+      subtitle: 'Para conversas mais formais',
       content: 'victor.maya42@gmail.com',
-      link: '',
+      link: 'mailto:victor.maya42@gmail.com',
       file: ''
     },
     {
       type: 'contato',
       image: linkedin.src,
       title: 'LinkedIn',
-      subtitle: '',
+      subtitle: 'Histórico profissional completo',
       content: '',
       link: 'https://www.linkedin.com/in/victor-maya/',
       file: ''
@@ -297,8 +302,8 @@ export const content = {
     {
       type: 'contato',
       image: github.src,
-      title: 'Github',
-      subtitle: '',
+      title: 'GitHub',
+      subtitle: 'Repositórios e projetos',
       content: '',
       link: 'https://github.com/victormaya',
       file: ''
@@ -308,9 +313,9 @@ export const content = {
     {
       type: 'curriculo',
       image: cv.src,
-      title: 'Baixar Currículo',
-      subtitle: '',
-      content: '',
+      title: 'Currículo — Victor Maya',
+      subtitle: 'Versão atualizada · PDF',
+      content: 'Clique para baixar o currículo completo em PDF.',
       link: '/cv.pdf',
       file: 'CV - Victor Maya'
     }

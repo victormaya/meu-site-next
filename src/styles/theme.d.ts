@@ -8,6 +8,11 @@ declare module 'styled-components' {
       greyText: string
       orangeText: string
       greyBg: string
+      accent: string
+      accentMuted: string
+      border: string
+      textMuted: string
+      textSubtle: string
     }
     font: {
       family: {

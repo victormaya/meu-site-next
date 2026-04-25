@@ -2,7 +2,13 @@ import imageProfile from '../assets/profile.jpeg'
 
 export default {
   image: imageProfile.src,
-  apresentacao: 'Olá, sou Victor Maya,',
+  nome: 'Victor Maya',
+  cargo: 'Front-End Sênior',
+  apresentacao: 'Victor Maya',
   descricao:
-    'um desenvolvedor front-end pleno com YEARS+ anos de experiência em JavaScript, ReactJS e NextJS. Graduado em Ciência e Tecnologia pela UFMA, sou apaixonado por tecnologia, viagens e música. Estou pronto para colaborar em projetos desafiadores e transformar ideias em realidade.'
+    'YEARS+ anos construindo interfaces que as pessoas realmente querem usar — com React, TypeScript e Next.js no centro do stack.',
+  linkedin: 'https://www.linkedin.com/in/victor-maya/',
+  github: 'https://github.com/victormaya',
+  whatsapp: 'https://api.whatsapp.com/send?phone=5599982756405',
+  email: 'victor.maya42@gmail.com',
 }

@@ -1,103 +1,120 @@
 import styled from 'styled-components'
 
 export const ContainerCard = styled.div`
-  /* para animacao */
+  /* animação de entrada */
   opacity: 0;
-  transform: translateX(20px);
-  /* para animacao */
-  @media (max-width: 970px) {
-    /* nao ter animação no mobile de sumir e apaercer */
+  transform: translateY(10px);
+  transition: opacity 0.35s ease, transform 0.35s ease, background 0.2s,
+    border-color 0.2s;
+
+  @media (max-width: 900px) {
     opacity: 1;
-    transform: initial;
+    transform: none;
   }
 
-  background: rgba(221, 221, 221, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-
-  width: 80%;
+  background: ${({ theme }) => theme.colors.greyBg};
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  width: 88%;
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  @media (max-width: 970px) {
+  grid-template-columns: 52px 1fr;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin: 0.6rem auto;
+  padding: 1.35rem 1.5rem;
+  border-radius: 12px;
+
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
+    width: 92%;
+    gap: 0.75rem;
   }
-  align-items: center;
-  margin: 1rem auto;
-  padding: 2rem;
-  border-radius: 10px;
-  transition: all 0.5s ease;
-  .image {
-    width: 6rem;
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
-    margin-right: 1rem;
-    @media (max-width: 970px) {
-      margin: 0 auto;
-      margin-bottom: 2rem;
-    }
-    img {
-      background: ${({ theme }) => theme.colors.greyText};
-      border-radius: 50%;
-      transition: all 0.3s ease;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      background: ${({ theme }) => theme.colors.linearGradient};
-      width: 3rem;
-      height: 3rem;
-      border-radius: 50%;
-      bottom: -0.3rem;
-      left: -0.4rem;
-      z-index: -1;
-      transition: all 0.3s ease;
-    }
-  }
+
   &:hover {
-    @media (min-width: 971px) {
-      transform: scale(1.05);
+    @media (min-width: 901px) {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(99, 102, 241, 0.3);
+      transform: translateY(-2px) !important;
     }
+  }
+
+  .image {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid ${({ theme }) => theme.colors.border};
+    flex-shrink: 0;
+
     img {
-      border-radius: 6px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
     }
-    .image:after {
-      border-radius: 4px;
+
+    @media (max-width: 900px) {
+      width: 40px;
+      height: 40px;
     }
   }
 
   h2 {
-    font-size: ${({ theme }) => theme.font.sizes.medium};
-    font-weight: bold;
-    line-height: 1.1;
-    /* background-image: linear-gradient(
-      90deg,
-      rgba(187, 50, 53, 1) 0%,
-      rgba(255, 187, 17, 1) 10%
-    ); */
-    color: ${({ theme }) => theme.colors.orangeText};
-    /* background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-  }
-  h3 {
-    font-size: ${({ theme }) => theme.font.sizes.small};
+    font-size: 0.975rem;
+    font-weight: 600;
+    line-height: 1.3;
     color: ${({ theme }) => theme.colors.greyText};
-    font-weight: bold;
-    line-height: 2;
+    margin-bottom: 0.2rem;
+  }
+
+  h3 {
+    font-size: 0.78rem;
+    color: ${({ theme }) => theme.colors.orangeText};
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    opacity: 0.85;
   }
 
   p {
-    color: ${({ theme }) => theme.colors.greyText};
-    line-height: 1.5rem;
+    color: ${({ theme }) => theme.colors.textMuted};
+    font-size: 0.85rem;
+    line-height: 1.65;
   }
-  &:last-child {
-    margin-bottom: 10rem;
-    @media (max-width: 970px) {
-      margin-bottom: 0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.9rem;
+    color: ${({ theme }) => theme.colors.orangeText};
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    padding: 0.35rem 0.85rem;
+    border-radius: 6px;
+    transition: all 0.18s;
+    font-family: ${({ theme }) => theme.font.family.default};
+
+    &:hover {
+      background: ${({ theme }) => theme.colors.accentMuted};
+      border-color: ${({ theme }) => theme.colors.orangeText};
+    }
+
+    &::after {
+      content: '→';
     }
   }
-  @media (max-width: 970px) {
-    h3, h2,p{ text-align: center;}
-   }
-  `
+
+  &:last-child {
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 900px) {
+    h3,
+    h2,
+    p {
+      text-align: left;
+    }
+  }
+`

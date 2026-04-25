@@ -1,35 +1,85 @@
 import React from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import profile from '../api/profile'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import { abas } from '../api/content'
 import YearsExperience from '../functions/YearsExperience'
-import { Container, ContentLeft, ContentRight } from './styled'
+import { Container, Sidebar, MainContent, PageHeader } from './styled'
 
 function DefaultLayout({ children }: { children: React.ReactNode }) {
+  const { asPath } = useRouter()
+  const currentAba = abas.find((a) => `/${a.path}` === asPath)
+
   return (
-    <>
-      <Container>
-        <div className="layer1" />
-        <div className="layer2" />
-        <ContentLeft>
-          <div className="perfil animaLeft">
-            <img src={profile.image} alt="Foto de Perfil" />
+    <Container>
+      <Sidebar>
+        <div className="profile-section">
+          <div className="avatar-wrapper">
+            <img src={profile.image} alt="Victor Maya" />
           </div>
-          <div className="textos animaLeft">
-            <h1>{profile.apresentacao}</h1>
-            <p>
-              {profile.descricao.replace('YEARS', YearsExperience().toString())}
-            </p>
-          </div>
-        </ContentLeft>
-        <ContentRight>
-          <Header />
-          {children}
-        </ContentRight>
-      </Container>
-      <Footer />
-    </>
+          <div className="name">{profile.nome}</div>
+          <span className="role">{profile.cargo}</span>
+          <p className="bio">
+            {profile.descricao.replace('YEARS', YearsExperience().toString())}
+          </p>
+        </div>
+
+        <div className="divider" />
+
+        <nav>
+          {abas.map((aba) => (
+            <Link
+              href={`/${aba.path}`}
+              key={aba.path}
+              className={`nav-item ${asPath === `/${aba.path}` ? 'active' : ''}`}
+            >
+              {aba.title}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="divider" />
+
+        <div className="social-links">
+          <a href={profile.github} target="_blank" rel="noreferrer" title="GitHub">
+            GH
+          </a>
+          <a href={profile.linkedin} target="_blank" rel="noreferrer" title="LinkedIn">
+            LI
+          </a>
+          <a href={profile.whatsapp} target="_blank" rel="noreferrer" title="WhatsApp">
+            WA
+          </a>
+          <a href={`mailto:${profile.email}`} title="E-mail">
+            @
+          </a>
+        </div>
+
+        <a
+          href="/cv.pdf"
+          className="cv-button"
+          target="_blank"
+          rel="noreferrer"
+          download
+        >
+          Download CV
+        </a>
+
+        <span className="copyright">
+          © {new Date().getFullYear()} Victor Maya
+        </span>
+      </Sidebar>
+
+      <MainContent>
+        {currentAba && (
+          <PageHeader>
+            <h2>{currentAba.title}</h2>
+          </PageHeader>
+        )}
+        {children}
+      </MainContent>
+    </Container>
   )
 }
 

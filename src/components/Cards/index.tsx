@@ -43,16 +43,14 @@ function Cards({
             </>
           ))}
         {(link || file) && (
-          <p>
-            <a
-              href={link || file}
-              target="_blank"
-              rel="noreferrer"
-              download={file}
-            >
-              Clique Aqui
-            </a>
-          </p>
+          <a
+            href={link || file}
+            target="_blank"
+            rel="noreferrer"
+            download={file || undefined}
+          >
+            Acessar
+          </a>
         )}
       </div>
     </ContainerCard>

@@ -5,7 +5,9 @@ import CardMusic from '../components/CardMusic'
 import Cards from '../components/Cards'
 import Head from '../components/Head'
 import Loading from '../components/Loading'
+import SkillsGrid from '../components/SkillsGrid'
 import { ContainerDefaultPage } from '../styles/ContainerPagesStyled'
+
 interface IData {
   image: string
   title: string
@@ -18,31 +20,36 @@ interface IData {
 
 function Slug({ data }: { data: IData[] }) {
   const [scrollOn, setScrollOn] = React.useState(false)
+  const isSkills = data.length > 0 && data[0].type === 'skills'
 
   return (
     <ContainerDefaultPage onScroll={() => setScrollOn(!scrollOn)}>
       <Head title={data[0].type} />
       {data.length > 0 ? (
-        data.map((item) =>
-          item.type !== 'Music' ? (
-            <Cards
-              scrollOn={scrollOn}
-              imagem={item.image}
-              titulo={item.title}
-              key={item.title}
-              alt={item.title}
-              subtitulo={item.subtitle}
-              conteudo={item.content}
-              link={item.link}
-              file={item.file}
-            />
-          ) : (
-            <CardMusic
-              key={item.title}
-              scrollOn={scrollOn}
-              title={item.title}
-              file={item.file}
-            />
+        isSkills ? (
+          <SkillsGrid skills={data} />
+        ) : (
+          data.map((item) =>
+            item.type !== 'Music' ? (
+              <Cards
+                scrollOn={scrollOn}
+                imagem={item.image}
+                titulo={item.title}
+                key={item.title}
+                alt={item.title}
+                subtitulo={item.subtitle}
+                conteudo={item.content}
+                link={item.link}
+                file={item.file}
+              />
+            ) : (
+              <CardMusic
+                key={item.title}
+                scrollOn={scrollOn}
+                title={item.title}
+                file={item.file}
+              />
+            )
           )
         )
       ) : (
@@ -54,7 +61,7 @@ function Slug({ data }: { data: IData[] }) {
 
 export async function getStaticPaths() {
   const paths = abas.map((aba) => ({
-    params: { slug: aba.path }
+    params: { slug: aba.path },
   }))
 
   return { paths, fallback: false }
@@ -67,8 +74,8 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
 
   return {
     props: {
-      data
-    }
+      data,
+    },
   }
 }
 

@@ -1,28 +1,27 @@
 export const theme = {
   colors: {
-    background: '#151515',
-    linearGradient:
-      'linear-gradient(90deg, rgba(187, 50, 53, 1) 0%, rgba(255, 187, 17, 1) 50%)',
-    greyText: '#ddd',
-    orangeText: '#fb1',
-    greyBg: '#eeeeee1a'
+    background: '#0f0f13',
+    linearGradient: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
+    greyText: '#e2e8f0',
+    orangeText: '#818cf8',
+    greyBg: 'rgba(255, 255, 255, 0.05)',
+    // novos
+    accent: '#6366f1',
+    accentMuted: 'rgba(99, 102, 241, 0.12)',
+    border: 'rgba(255, 255, 255, 0.08)',
+    textMuted: '#64748b',
+    textSubtle: '#94a3b8',
   },
   font: {
     family: {
-      default: "'Poppins', sans-serif",
-      custom: "'Passion One', cursive"
+      default: "'Inter', sans-serif",
+      custom: "'Inter', sans-serif",
     },
     sizes: {
-      xsmall: '0.875rem',
-      small: '1.125rem',
-      medium: '1.375rem',
-      large: '3rem'
-      // xlarge: '4.0rem',
-      // xxlarge: '4.8rem',
-      // huge: '5.6rem',
-      // xhuge: '6.4rem',
-    }
-  }
+      xsmall: '0.75rem',
+      small: '0.875rem',
+      medium: '1rem',
+      large: '2rem',
+    },
+  },
 }
-
-// ${({ theme }) => theme.colors.orangeText};
