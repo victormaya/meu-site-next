@@ -170,7 +170,7 @@ export const content = {
       title: 'WhatsApp',
       subtitle: 'Respondo rápido',
       content: '',
-      link: 'https://api.whatsapp.com/send?phone=5599982756405',
+      link: 'https://api.whatsapp.com/send?phone=5599984023182',
       file: ''
     },
     {
