@@ -12,21 +12,27 @@ import unasus from '../assets/experiencia/unasus.png'
 import usp from '../assets/experiencia/usp.png'
 import ambev from '../assets/portifolio/ambev.png'
 import rimasraras from '../assets/portifolio/rimasraras.png'
-import bootstrap from '../assets/skills/bootstrap.png'
 import figma from '../assets/skills/figma.png'
 import git from '../assets/skills/git.png'
-import jest from '../assets/skills/jest.png'
-import material from '../assets/skills/Material.png'
 import next from '../assets/skills/nextjs.png'
 import radix from '../assets/skills/radix.png'
 import reactjs from '../assets/skills/reactjs.png'
-import native from '../assets/skills/reactnative.jpg'
-import redux from '../assets/skills/redux.png'
-import storybook from '../assets/skills/sb.png'
-import styled from '../assets/skills/styled.png'
 import tail from '../assets/skills/tailwind.png'
 import ts from '../assets/skills/TS.png'
-import xd from '../assets/skills/XD.png'
+const zustand       = { src: '/skills/zustand.svg' }
+const reactquery    = { src: '/skills/reactquery.svg' }
+const shadcnui      = { src: '/skills/shadcnui.svg' }
+const vite          = { src: '/skills/vite.svg' }
+const turborepo     = { src: '/skills/turborepo.svg' }
+const eslint        = { src: '/skills/eslint.svg' }
+const prettier      = { src: '/skills/prettier.svg' }
+const webpack       = { src: '/skills/webpack.svg' }
+const vitest        = { src: '/skills/vitest.svg' }
+const playwright    = { src: '/skills/playwright.svg' }
+const vercelAi      = { src: '/skills/vercel-ai.svg' }
+const vercel        = { src: '/skills/vercel.svg' }
+const docker        = { src: '/skills/docker.svg' }
+const githubactions = { src: '/skills/githubactions.svg' }
 
 export const abas = [
   { title: 'Home', path: '' },
@@ -39,141 +45,27 @@ export const abas = [
 
 export const content = {
   skills: [
-    {
-      type: 'skills',
-      image: ts.src,
-      title: 'TypeScript',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: reactjs.src,
-      title: 'React',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: native.src,
-      title: 'React Native',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: next.src,
-      title: 'Next.js',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: jest.src,
-      title: 'Jest & Testing Library',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: redux.src,
-      title: 'Redux',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: storybook.src,
-      title: 'Storybook',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: styled.src,
-      title: 'Styled Components',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: tail.src,
-      title: 'Tailwind CSS',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: material.src,
-      title: 'Material UI',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: radix.src,
-      title: 'Radix UI',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: bootstrap.src,
-      title: 'Bootstrap',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: figma.src,
-      title: 'Figma',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: xd.src,
-      title: 'Adobe XD',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: git.src,
-      title: 'Git',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    }
+    { type: 'skills', image: ts.src,              title: 'TypeScript',                  subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: reactjs.src,          title: 'React',                       subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: next.src,             title: 'Next.js 14+ (App Router, RSC)',subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: zustand.src,          title: 'Zustand',                     subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: reactquery.src,       title: 'React Query (TanStack)',       subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: tail.src,             title: 'Tailwind CSS',                subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: radix.src,            title: 'Radix UI',                    subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: shadcnui.src,         title: 'Shadcn/ui',                   subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: vite.src,             title: 'Vite',                        subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: turborepo.src,        title: 'Turborepo',                   subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: eslint.src,           title: 'ESLint',                      subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: prettier.src,         title: 'Prettier',                    subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: webpack.src,          title: 'Webpack',                     subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: vitest.src,           title: 'Vitest',                      subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: playwright.src,       title: 'Playwright (E2E)',             subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: vercelAi.src,         title: 'Vercel AI SDK',               subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: figma.src,            title: 'Figma',                       subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: git.src,              title: 'Git',                         subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: githubactions.src,    title: 'GitHub Actions (CI/CD)',       subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: vercel.src,           title: 'Vercel',                      subtitle: '', content: '', link: '', file: '' },
+    { type: 'skills', image: docker.src,           title: 'Docker',                      subtitle: '', content: '', link: '', file: '' },
   ],
   experiencia: [
     {
