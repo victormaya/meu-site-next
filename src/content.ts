@@ -12,21 +12,27 @@ import unasus from '../assets/experiencia/unasus.png'
 import usp from '../assets/experiencia/usp.png'
 import ambev from '../assets/portifolio/ambev.png'
 import rimasraras from '../assets/portifolio/rimasraras.png'
-import bootstrap from '../assets/skills/bootstrap.png'
 import figma from '../assets/skills/figma.png'
 import git from '../assets/skills/git.png'
-import jest from '../assets/skills/jest.png'
-import material from '../assets/skills/Material.png'
 import next from '../assets/skills/nextjs.png'
 import radix from '../assets/skills/radix.png'
 import reactjs from '../assets/skills/reactjs.png'
-import native from '../assets/skills/reactnative.jpg'
-import redux from '../assets/skills/redux.png'
-import storybook from '../assets/skills/sb.png'
-import styled from '../assets/skills/styled.png'
 import tail from '../assets/skills/tailwind.png'
 import ts from '../assets/skills/TS.png'
-import xd from '../assets/skills/XD.png'
+import zustand from '../assets/skills/zustand.svg'
+import reactquery from '../assets/skills/reactquery.svg'
+import shadcnui from '../assets/skills/shadcnui.svg'
+import vite from '../assets/skills/vite.svg'
+import turborepo from '../assets/skills/turborepo.svg'
+import eslint from '../assets/skills/eslint.svg'
+import prettier from '../assets/skills/prettier.svg'
+import webpack from '../assets/skills/webpack.svg'
+import vitest from '../assets/skills/vitest.svg'
+import playwright from '../assets/skills/playwright.svg'
+import vercelAi from '../assets/skills/vercel-ai.svg'
+import vercel from '../assets/skills/vercel.svg'
+import docker from '../assets/skills/docker.svg'
+import githubactions from '../assets/skills/githubactions.svg'
 
 export const abas = [
   { title: 'Skills', path: 'skills' },
@@ -38,10 +44,11 @@ export const abas = [
 ]
 export const content = {
   skills: [
+    // Linguagens & Core
     {
       type: 'skills',
       image: ts.src,
-      title: 'Typescript',
+      title: 'TypeScript',
       subtitle: '',
       content: '',
       link: '',
@@ -50,16 +57,7 @@ export const content = {
     {
       type: 'skills',
       image: reactjs.src,
-      title: 'ReactJs',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: native.src,
-      title: 'React Native',
+      title: 'React',
       subtitle: '',
       content: '',
       link: '',
@@ -68,7 +66,17 @@ export const content = {
     {
       type: 'skills',
       image: next.src,
-      title: 'NextJs',
+      title: 'Next.js 14+ (App Router, RSC)',
+      subtitle: '',
+      content: '',
+      link: '',
+      file: ''
+    },
+    // Gerenciamento de Estado & Data Fetching
+    {
+      type: 'skills',
+      image: zustand.src,
+      title: 'Zustand',
       subtitle: '',
       content: '',
       link: '',
@@ -76,53 +84,18 @@ export const content = {
     },
     {
       type: 'skills',
-      image: jest.src,
-      title: 'Jest + Testing Library (Testes unitários), TDD',
+      image: reactquery.src,
+      title: 'React Query (TanStack Query)',
       subtitle: '',
       content: '',
       link: '',
       file: ''
     },
+    // Estilização
     {
       type: 'skills',
-      image: redux.src,
-      title: 'Redux',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: storybook.src,
-      title: 'Storybook',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: styled.src,
-      title: 'Styled Components',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: bootstrap.src,
-      title: 'Bootstrap',
-      subtitle: '',
-      content: '',
-      link: '',
-      file: ''
-    },
-    {
-      type: 'skills',
-      image: material.src,
-      title: 'MateiralUI',
+      image: tail.src,
+      title: 'Tailwind CSS',
       subtitle: '',
       content: '',
       link: '',
@@ -131,7 +104,7 @@ export const content = {
     {
       type: 'skills',
       image: radix.src,
-      title: 'RadixUI',
+      title: 'Radix UI',
       subtitle: '',
       content: '',
       link: '',
@@ -139,13 +112,89 @@ export const content = {
     },
     {
       type: 'skills',
-      image: tail.src,
-      title: 'Tailwind',
+      image: shadcnui.src,
+      title: 'Shadcn/ui',
       subtitle: '',
       content: '',
       link: '',
       file: ''
     },
+    // Tooling & Build
+    {
+      type: 'skills',
+      image: vite.src,
+      title: 'Vite',
+      subtitle: '',
+      content: '',
+      link: '',
+      file: ''
+    },
+    {
+      type: 'skills',
+      image: turborepo.src,
+      title: 'Turborepo',
+      subtitle: '',
+      content: '',
+      link: '',
+      file: ''
+    },
+    {
+      type: 'skills',
+      image: eslint.src,
+      title: 'ESLint',
+      subtitle: '',
+      content: '',
+      link: '',
+      file: ''
+    },
+    {
+      type: 'skills',
+      image: prettier.src,
+      title: 'Prettier',
+      subtitle: '',
+      content: '',
+      link: '',
+      file: ''
+    },
+    {
+      type: 'skills',
+      image: webpack.src,
+      title: 'Webpack',
+      subtitle: '',
+      content: '',
+      link: '',
+      file: ''
+    },
+    // Testes
+    {
+      type: 'skills',
+      image: vitest.src,
+      title: 'Vitest',
+      subtitle: '',
+      content: '',
+      link: '',
+      file: ''
+    },
+    {
+      type: 'skills',
+      image: playwright.src,
+      title: 'Playwright (E2E)',
+      subtitle: '',
+      content: '',
+      link: '',
+      file: ''
+    },
+    // AI & Integrações
+    {
+      type: 'skills',
+      image: vercelAi.src,
+      title: 'Vercel AI SDK',
+      subtitle: '',
+      content: '',
+      link: '',
+      file: ''
+    },
+    // Design
     {
       type: 'skills',
       image: figma.src,
@@ -155,10 +204,11 @@ export const content = {
       link: '',
       file: ''
     },
+    // Infra & Deploy
     {
       type: 'skills',
-      image: xd.src,
-      title: 'AdobeXD',
+      image: git.src,
+      title: 'Git',
       subtitle: '',
       content: '',
       link: '',
@@ -166,8 +216,26 @@ export const content = {
     },
     {
       type: 'skills',
-      image: git.src,
-      title: 'Git',
+      image: githubactions.src,
+      title: 'GitHub Actions (CI/CD)',
+      subtitle: '',
+      content: '',
+      link: '',
+      file: ''
+    },
+    {
+      type: 'skills',
+      image: vercel.src,
+      title: 'Vercel',
+      subtitle: '',
+      content: '',
+      link: '',
+      file: ''
+    },
+    {
+      type: 'skills',
+      image: docker.src,
+      title: 'Docker',
       subtitle: '',
       content: '',
       link: '',

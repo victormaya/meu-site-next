@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="16" fill="#FF4154"/>
+  <text x="50" y="43" font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="white" text-anchor="middle">TanStack</text>
+  <text x="50" y="66" font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="white" text-anchor="middle">Query</text>
+</svg>
