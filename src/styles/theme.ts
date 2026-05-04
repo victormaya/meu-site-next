@@ -1,13 +1,13 @@
 export const theme = {
   colors: {
-    background: '#0f0f13',
-    linearGradient: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
+    background: '#0f0e0a',
+    linearGradient: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
     greyText: '#e2e8f0',
-    orangeText: '#818cf8',
+    orangeText: '#fbbf24',
     greyBg: 'rgba(255, 255, 255, 0.05)',
     // novos
-    accent: '#6366f1',
-    accentMuted: 'rgba(99, 102, 241, 0.12)',
+    accent: '#f59e0b',
+    accentMuted: 'rgba(245, 158, 11, 0.12)',
     border: 'rgba(255, 255, 255, 0.08)',
     textMuted: '#64748b',
     textSubtle: '#94a3b8',

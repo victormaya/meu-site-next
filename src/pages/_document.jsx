@@ -34,6 +34,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-BR">
          <Head>
+          <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
           <meta
             property="og:image"
             content="https://victormayadev.com/_next/static/media/perfil.36a1485c.jpeg"

@@ -142,14 +142,14 @@ a {
   width: 0.4rem;
 }
 ::-webkit-scrollbar-track {
-  background: #0f0f13;
+  background: #0f0e0a;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(99, 102, 241, 0.3);
+  background-color: rgba(245, 158, 11, 0.3);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(99, 102, 241, 0.55);
+  background-color: rgba(245, 158, 11, 0.55);
 }
 
 * {
