@@ -136,7 +136,7 @@ export const content = {
     {
       type: 'portifolio',
       image: vokaoImg.src,
-      title: 'Vokao',
+      title: 'VOKAO',
       subtitle: 'Plataforma de karaokê · Next.js · YouTube',
       content:
         'Plataforma web de karaokê que usa IA para remover os vocais de qualquer música do YouTube instantaneamente. Busque qualquer faixa e cante — sem limites de catálogo.',
