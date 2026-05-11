@@ -24,6 +24,7 @@ const reactquery    = { src: '/skills/reactquery.svg' }
 const shadcnui      = { src: '/skills/shadcnui.svg' }
 const vite          = { src: '/skills/vite.svg' }
 const turborepo     = { src: '/skills/turborepo.svg' }
+const vokao         = { src: '/portifolio/vokao.png' }
 const eslint        = { src: '/skills/eslint.svg' }
 const prettier      = { src: '/skills/prettier.svg' }
 const webpack       = { src: '/skills/webpack.svg' }
@@ -132,6 +133,16 @@ export const content = {
     }
   ],
   portifolio: [
+    {
+      type: 'portifolio',
+      image: vokao.src,
+      title: 'Vokao',
+      subtitle: 'Plataforma de karaokê · Next.js · YouTube',
+      content:
+        'Plataforma web de karaokê integrada ao YouTube, permitindo cantar qualquer música de forma instantânea. Um projeto pessoal que une tecnologia e entretenimento musical.',
+      link: 'https://vokao.com.br',
+      file: ''
+    },
     {
       type: 'portifolio',
       image: ambev.src,
