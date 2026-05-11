@@ -12,6 +12,7 @@ import unasus from '../assets/experiencia/unasus.png'
 import usp from '../assets/experiencia/usp.png'
 import ambev from '../assets/portifolio/ambev.png'
 import rimasraras from '../assets/portifolio/rimasraras.png'
+import vokaoImg from '../assets/portifolio/vokao.jpg'
 import figma from '../assets/skills/figma.png'
 import git from '../assets/skills/git.png'
 import next from '../assets/skills/nextjs.png'
@@ -24,7 +25,6 @@ const reactquery    = { src: '/skills/reactquery.svg' }
 const shadcnui      = { src: '/skills/shadcnui.svg' }
 const vite          = { src: '/skills/vite.svg' }
 const turborepo     = { src: '/skills/turborepo.svg' }
-const vokao         = { src: '/portifolio/vokao.png' }
 const eslint        = { src: '/skills/eslint.svg' }
 const prettier      = { src: '/skills/prettier.svg' }
 const webpack       = { src: '/skills/webpack.svg' }
@@ -135,7 +135,7 @@ export const content = {
   portifolio: [
     {
       type: 'portifolio',
-      image: vokao.src,
+      image: vokaoImg.src,
       title: 'Vokao',
       subtitle: 'Plataforma de karaokê · Next.js · YouTube',
       content:
