@@ -150,7 +150,7 @@ export const content = {
       subtitle: 'Sistema de agendamento · Tour Virtual 360°',
       content:
         'Plataforma de agendamento de visitas às cervejarias da Ambev com tour virtual imersivo em 360°. Desenvolvido durante meu tempo na Samba Digital.',
-      link: 'https://www.visitaambev.com.br/home',
+      link: '',
       file: ''
     },
     {
@@ -160,7 +160,7 @@ export const content = {
       subtitle: 'React Native · App educacional',
       content:
         'App de inglês com music player, leitor de livros, área de vídeos dos professores e sistema de gestão de contratos.',
-      link: 'https://play.google.com/store/apps/details?id=com.phoenix.english.course',
+      link: '',
       file: ''
     },
     {
@@ -169,7 +169,7 @@ export const content = {
       title: 'Rimas Raras',
       subtitle: 'Projeto musical independente',
       content:
-        'Plataforma musical com player, letras e um universo sonoro próprio. Um projeto pessoal que une música e tecnologia.',
+        'Site para encontrar rimas não óbvias para qualquer palavra. Ideal para rappers, poetas e letristas que querem fugir do lugar-comum.',
       link: 'https://rimasraras.com.br/',
       file: ''
     }
