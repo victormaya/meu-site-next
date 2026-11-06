@@ -12,9 +12,11 @@ function DefaultLayout({ children }: { children: React.ReactNode }) {
   const currentAba = abas.find((a) =>
     a.path === '' ? asPath === '/' : `/${a.path}` === asPath
   )
+  const hideSidebar = asPath.startsWith('/artigos/')
 
   return (
-    <Container>
+    <Container className={hideSidebar ? 'no-sidebar' : ''}>
+      {!hideSidebar && (
       <Sidebar>
         <div className="profile-section">
           <div className="avatar-wrapper">
@@ -77,6 +79,7 @@ function DefaultLayout({ children }: { children: React.ReactNode }) {
           © {new Date().getFullYear()} Victor Maya
         </span>
       </Sidebar>
+      )}
 
       <MainContent>
         {currentAba && (

@@ -10,6 +10,10 @@ export const Container = styled.div`
     grid-template-columns: 1fr;
   }
 
+  &.no-sidebar {
+    grid-template-columns: 1fr;
+  }
+
   .visible {
     opacity: 1 !important;
     transform: none !important;
