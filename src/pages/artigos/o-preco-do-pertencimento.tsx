@@ -33,7 +33,7 @@ function Artigo() {
         </Link>
 
         <h1>{TITLE}</h1>
-        <div className="meta">5 de novembro de 2026 · @victormaya_</div>
+        <div className="meta">6 de novembro de 2026 · @victormaya_</div>
         <p className="lead">{DESCRIPTION}</p>
 
         <p>
@@ -50,11 +50,7 @@ function Artigo() {
           anulei o voto. Para vereador, só votei em parentes. Nas eleições estaduais,
           poucas vezes votei com convicção. Ainda assim, sem perceber, desenvolvi um
           pertencimento ideológico que hoje não quero mais alimentar. Tribalismo,
-          descobri, não depende de em quem a gente vota. Depende de como a gente pensa.
-        </p>
-        <p>
-          Este texto é sobre essa diferença. Ter convicções é uma coisa; ser torcedor é
-          outra. A primeira exige pensar. A segunda dispensa.
+          descobri, não depende de em quem a gente vota, mas de como a gente pensa.
         </p>
 
         <h2>O atestado de inteligência</h2>
@@ -83,6 +79,15 @@ function Artigo() {
           diferentes.
         </p>
         <p>
+          Um exemplo concreto: as pautas trabalhistas. Por muito tempo, bastava a
+          discussão sobre jornada ou escala 6x1 aparecer para eu já saber o que pensar —
+          era pauta de esquerda, logo era demagogia, logo era alguém querendo ganhar sem
+          trabalhar. Nunca examinei de verdade. Quando parei para ouvir quem vive uma
+          escala dessas, entendi que a pergunta é legítima, mesmo que eu continue
+          discordando de boa parte das soluções propostas. Não mudei de lado por causa
+          disso. Mudei o reflexo de descartar a pergunta junto com a resposta.
+        </p>
+        <p>
           Quando parei para olhar, a conclusão foi banal e incômoda. Há gente honesta e
           desonesta, generosa e mesquinha, brilhante e tola em todos os campos. Nenhuma
           ideologia torna alguém automaticamente melhor.
@@ -98,24 +103,24 @@ function Artigo() {
           suspeitas ou faz rir do adversário.
         </p>
         <p>
-          O resultado é uma realidade sob medida. Passamos horas vendo análises
-          políticas e saímos com a sensação de estar bem informados, quando só
-          aprofundamos o que já pensávamos. Quando o outro lado aparece na tela,
-          raramente é a sua melhor versão. É o militante mais histérico, a declaração
-          mais absurda, o vídeo mais fácil de ridicularizar, apresentado como se falasse
-          por todos que pensam daquele jeito.
+          Comigo funcionou assim: passei horas vendo análise política achando que estava
+          me informando, quando só aprofundava o que já pensava. E quando o outro lado
+          aparecia na tela, raramente era a sua melhor versão. Era o militante mais
+          histérico, a declaração mais absurda, o vídeo mais fácil de ridicularizar,
+          apresentado como se falasse por todos que pensam daquele jeito.
         </p>
         <p>
-          Por isso sair da bolha dá mais trabalho do que dizer que se está aberto ao
-          contraditório. É preciso procurar o que o algoritmo não entrega, ler o melhor
-          argumento do outro lado em vez do pior e admitir que a versão que conhecemos
-          de um assunto pode estar incompleta. Isso vale para mim, para a direita e para
-          a esquerda.
+          Foi aí que entendi que sair da bolha dá mais trabalho do que dizer que se
+          está aberto ao contraditório. Tenho que procurar o que o algoritmo não me entrega,
+          ler o melhor argumento do outro lado em vez do pior e aceitar que a versão que
+          eu conheço de um assunto pode estar incompleta. Isso vale para mim, para a
+          direita e para a esquerda.
         </p>
 
         <h2>Lealdade acima da coerência</h2>
         <p>
-          É aqui que entra minha crítica ao bolsonarismo. Muita gente se aproximou dele
+          A bolha explica o que chega até nós. Não explica o que aceitamos sem
+          questionar. E é na segunda parte que está minha crítica ao bolsonarismo. Muita gente se aproximou dele
           por razões legítimas: cansaço com a corrupção, desejo de renovação, a
           sensação de que finalmente alguém falava por quem não se sentia representado.
           Entendo esses motivos. O problema começa quando a confiança num líder vira
@@ -134,13 +139,11 @@ function Artigo() {
           coerência do próprio governo. E boa parte dos apoiadores aceitou sem piscar.
         </p>
         <p>
-          Um episódio menor, mas revelador, veio em novembro de 2022. Enquanto
-          apoiadores do pai tomavam chuva na porta dos quartéis, Eduardo Bolsonaro
-          apareceu na transmissão de Brasil x Suíça, no Catar. Cobrado até por
-          seguidores, gravou um vídeo mostrando um pen drive: estava lá, disse, para
-          entregar vídeos em inglês explicando a situação do Brasil. Nunca se soube o
-          que aquele pen drive produziu. Mas a explicação, que fora da bolha virou piada
-          instantânea, dentro dela foi aceita e defendida por muita gente.
+          O mesmo padrão se repetiu em escalas menores, como quando Eduardo Bolsonaro
+          justificou sua ida ao Catar, em novembro de 2022, exibindo pen drives que,
+          segundo ele, traziam vídeos em inglês sobre a situação do Brasil — explicação
+          que fora da bolha virou piada instantânea e, dentro dela, foi defendida com
+          seriedade.
         </p>
         <p>
           Não quero transformar esses episódios numa acusação contra todos os que
@@ -148,7 +151,6 @@ function Artigo() {
           apontar essas contradições passou a ser tratado como traição.
         </p>
 
-        <h2>Quando a profecia falha</h2>
         <p>
           Existe um nome para o que acontece quando a realidade contradiz algo em que
           acreditamos muito: dissonância cognitiva. Em vez de rever a crença,
@@ -161,29 +163,54 @@ function Artigo() {
           turno, correntes de WhatsApp pediam aos apoiadores que mantivessem os
           bloqueios nas estradas e esperassem 72 horas: seria o prazo para uma
           intervenção militar com base no artigo 142 da Constituição. O artigo não
-          prevê nada disso, e as 72 horas passaram. Vieram outros prazos. Na véspera de
-          Natal, num acampamento em frente ao quartel de Fortaleza, ainda se esperava
-          uma &quot;virada&quot; na semana seguinte e se contavam as horas até a
-          &quot;falsa posse&quot;. Cada profecia frustrada não enfraquecia o grupo.
-          Produzia a próxima.
+          prevê nada disso, e as 72 horas passaram. Vieram outros prazos. Semanas
+          depois, com os acampamentos ainda de pé, esperava-se uma &quot;virada&quot; a
+          qualquer momento e contavam-se os dias até a &quot;falsa posse&quot;. Cada
+          profecia frustrada não enfraquecia o grupo: produzia a próxima.
         </p>
         <p>
-          Não estou dizendo que todo bolsonarista acreditou nisso. Seria injusto reduzir
-          milhões de eleitores aos acampamentos. Mas há uma relação preocupante entre
+          Há uma relação preocupante entre
           ambientes políticos fechados, desconfiança permanente de qualquer informação
           contrária e disposição para acreditar em narrativas extraordinárias sem exigir
           provas à altura. Quando toda informação incômoda vira parte de uma
           conspiração, não sobra terreno comum para conversa.
         </p>
+        <h2>A tese aplicada a mim</h2>
         <p>
-          E aqui devo uma confissão. Na primeira versão deste texto, eu citava o vídeo
-          de bolsonaristas em Porto Alegre que, com o celular na cabeça, estariam
-          pedindo socorro a extraterrestres. Fui checar antes de publicar. O vídeo que
+          Devo uma confissão. Na primeira versão deste texto, eu citava o vídeo
+          de bolsonaristas que, em frente a um quartel em Porto Alegre, com o celular na
+          cabeça, estariam pedindo socorro a extraterrestres. Fui checar antes de publicar. O vídeo que
           rodou o país como piada mostrava outra coisa: o grupo formava com as lanternas
           as letras &quot;SOS FA&quot;, um apelo às Forças Armadas, para ser fotografado
           por um drone. Continua sendo um pedido de intervenção militar, mas não tem
           nada de ET. Eu acreditei porque confirmava o que eu já pensava sobre quem
-          estava ali. Foi a tese deste texto inteiro aplicada a mim mesmo.
+          estava ali. Passei o texto inteiro descrevendo esse mecanismo e caí nele na
+          véspera de publicar.
+        </p>
+        <p>
+          E esse mecanismo não tem lado. Em 2018, a versão de que a facada em Bolsonaro
+          tinha sido encenação circulou com a mesma convicção no campo oposto, e foi
+          desmentida por agências de checagem ainda naquele ano e pelos médicos que o
+          operaram. O erro é idêntico ao meu: uma história que encaixa perfeitamente no
+          que a pessoa já quer acreditar sobre o adversário dispensa verificação. Eu
+          reconheço esse reflexo porque ele é meu também, não porque seja privilégio do
+          outro lado.
+        </p>
+        <p>
+          E não foi um deslize isolado. Sou arrogante em muitas situações e me acostumei
+          a me sentir superior em muitas coisas. Quero aprender a desconfiar das minhas certezas, porque a visão de
+          mundo que hoje me parece óbvia pode mudar amanhã. Admitir que posso estar
+          errado não deveria ser vergonha. Talvez seja o gesto intelectual mais
+          importante que alguém pode fazer.
+        </p>
+        <p>
+          Na prática, comecei pelo mais simples: checo antes de compartilhar e
+          desconfio do vídeo que me dá razão rápido demais. Mas também passei a
+          acompanhar gente com quem não concordo, direto na fonte, em vez de conhecer o
+          argumento dela pelo recorte que o meu lado faz. Mudou o que aparece no meu
+          feed e, principalmente, mudou a qualidade do que eu acho que o outro lado
+          pensa. Descobri que estava discutindo com a pior versão de um argumento que,
+          na forma original, era bem mais difícil de responder.
         </p>
 
         <h2>O preço de discordar</h2>
@@ -197,19 +224,26 @@ function Artigo() {
           num veredito sobre quem pensa diferente.
         </p>
         <p>
-          Também não quero perder amizades por ousar discordar. Já fui chamado de
-          idiota, imbecil, manipulado e vítima de lavagem cerebral por pessoas que
-          considerava amigas. Aprendi com isso que certas relações dependem de uma
-          cláusula silenciosa: você é respeitado enquanto concorda. Prefiro uma
-          discordância honesta a uma amizade que só funciona enquanto há alinhamento.
+          Há uma coisa pouco nobre aqui: com família e amigos próximos, hoje até torço
+          para que eles não falem mais de política comigo. Não foi um episódio que me levou a isso, foi
+          cansaço acumulado — a conversa que começa leve, sobe de tom e termina com
+          alguém magoado por algo que ninguém ali vai mudar de ideia sobre. Prefiro
+          preservar o pouco tempo que tenho com essas pessoas a gastá-lo numa discussão
+          que não leva a lugar nenhum. E não é exigência de um lado só: eu também parei
+          de puxar o assunto. Se vale para eles, vale para mim.
         </p>
         <p>
-          Seria hipócrita, porém, apontar esse comportamento nos outros sem admitir o
-          meu. Sou arrogante em muitas situações e me acostumei a me sentir superior em
-          muitas coisas. Quero aprender a desconfiar das minhas certezas, porque a visão
-          de mundo que hoje me parece óbvia pode mudar amanhã. Admitir que posso estar
-          errado não deveria ser vergonha. Talvez seja o gesto intelectual mais
-          importante que alguém pode fazer.
+          Não confunda isso com fugir do contraditório. O silêncio que eu quero é com
+          quem eu amo e não quero perder. Com quem topa discordar sem rebaixar, continuo
+          querendo a conversa inteira. A diferença não está no tema: está em se a
+          relação sobrevive ao desacordo.
+        </p>
+        <p>
+          Porque nem sempre sobrevive. Já fui chamado de idiota, imbecil, manipulado e
+          vítima de lavagem cerebral por pessoas que considerava amigas. Aprendi com
+          isso que certas relações dependem de uma cláusula silenciosa: você é
+          respeitado enquanto concorda. Prefiro uma discordância honesta a uma amizade
+          que só funciona enquanto há alinhamento.
         </p>
 
         <h2>Convicção sem tribo</h2>
@@ -226,17 +260,38 @@ function Artigo() {
           alguém sobre o caminho é muito diferente de achá-lo burro ou mau.
         </p>
         <p>
-          Continuo de direita. Continuo achando que há diferenças importantes entre
-          projetos políticos e que nem todas as ideias são igualmente boas. Mas quero
-          ser menos obcecado em vencer discussões, menos dependente da aprovação do meu
-          grupo e menos disposto a consumir só o que confirma o que já penso. Quero
-          voltar a admirar alguém sem precisar concordar com tudo o que defende, e
-          discordar de alguém sem desqualificar sua história inteira.
+          Continuo de direita, e dizer isso sem explicar seria repetir o rótulo em vez
+          de defender a ideia. Então: acho que o Estado brasileiro cobra caro demais
+          pelo que devolve, e que o problema não é apenas o tamanho da carga, é a
+          distância entre o que se paga e o que se recebe de volta em saúde, segurança
+          e educação. Acho que o crime organizado cresceu enquanto o debate público se
+          ocupava de outras coisas, e que a resposta passa primeiro por mais repressão:
+          polícia presente no território, capacidade real de investigação e punição que
+          chegue ao fim. Não acho que prevenção seja inútil, acho que ela não funciona
+          onde o Estado perdeu o controle do território para a facção. Primeiro se
+          retoma, depois se previne. E acho que as
+          decisões sobre valores e formação dos filhos cabem primeiro à família, o que
+          não significa que o Estado nunca deva entrar — significa que ele entra por
+          exceção, não por padrão.
         </p>
         <p>
-          Não preciso concordar com alguém para respeitá-lo. Nem abandonar minhas
-          convicções para admitir que posso aprender com quem pensa diferente. Torcedor
-          não faz isso. Cidadão, sim.
+          Posso estar errado em qualquer uma dessas três. São convicções, não
+          demonstrações. A diferença em relação a alguns anos atrás é que hoje consigo
+          dizer o que me faria mudar de ideia. A primeira cai se o nosso problema for
+          cobrar pouco, e não gastar mal. A segunda cai se prevenção, sozinha, estiver
+          derrubando crime violento onde foi tentada de verdade — ou se, onde a
+          repressão foi ampliada de verdade, a queda não tiver se sustentado. A terceira cai se a
+          exceção for muito mais comum do que eu suponho.
+        </p>
+        <p>
+          Continuo achando que nem todas as ideias são igualmente boas. Mas quero ser
+          menos obcecado em vencer discussões, menos dependente da aprovação do meu
+          grupo e menos disposto a consumir só o que confirma o que já penso. Não
+          preciso concordar com alguém para respeitá-lo, nem abandonar minhas
+          convicções para admitir que posso aprender com quem pensa diferente. Era esse
+          o preço do pertencimento: para continuar confortavelmente dentro, eu precisava
+          entregar o direito de discordar dos meus. Achei caro demais pelo que vinha de
+          volta.
         </p>
 
         <p className="note">
