@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styled from 'styled-components'
 
 export const ArticleList = styled.div`
@@ -7,7 +8,7 @@ export const ArticleList = styled.div`
   padding: 0 0 2.5rem;
 `
 
-export const ArticleCard = styled.a`
+export const ArticleCard = styled(Link)`
   display: block;
   text-decoration: none;
   background: ${({ theme }) => theme.colors.greyBg};

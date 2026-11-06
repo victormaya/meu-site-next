@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 
 import { ContainerDefaultPage } from '../../styles/ContainerPagesStyled'
@@ -21,13 +20,11 @@ function Artigos() {
       <NextSeo title="Artigos" noindex nofollow />
       <ArticleList>
         {articles.map((article) => (
-          <Link key={article.slug} href={`/artigos/${article.slug}`} passHref legacyBehavior>
-            <ArticleCard>
-              <h2>{article.title}</h2>
-              <span>{article.date}</span>
-              <p>{article.excerpt}</p>
-            </ArticleCard>
-          </Link>
+          <ArticleCard key={article.slug} href={`/artigos/${article.slug}`}>
+            <h2>{article.title}</h2>
+            <span>{article.date}</span>
+            <p>{article.excerpt}</p>
+          </ArticleCard>
         ))}
       </ArticleList>
     </ContainerDefaultPage>
